@@ -1,0 +1,6 @@
+runtime: nodejs16
+service: doko-data-worker
+env: flexible
+instance_class: B1
+manual_scaling:
+  instances: 3

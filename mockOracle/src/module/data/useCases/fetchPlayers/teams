@@ -1,0 +1,3677 @@
+{
+  "get": "players/statistics",
+  "parameters": {
+    "id": "75",
+    "season": "2021"
+  },
+  "errors": [],
+  "results": 94,
+  "response": [
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10798
+      },
+      "points": 25,
+      "pos": "SG",
+      "min": "26:23",
+      "fgm": 8,
+      "fga": 16,
+      "fgp": "50.0",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 4,
+      "tpa": 12,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10827
+      },
+      "points": null,
+      "pos": null,
+      "min": null,
+      "fgm": null,
+      "fga": null,
+      "fgp": null,
+      "ftm": null,
+      "fta": null,
+      "ftp": null,
+      "tpm": null,
+      "tpa": null,
+      "tpp": null,
+      "offReb": null,
+      "defReb": null,
+      "totReb": null,
+      "assists": null,
+      "pFouls": null,
+      "steals": null,
+      "turnovers": null,
+      "blocks": null,
+      "plusMinus": null,
+      "comment": "NWT - Health and Safety Protocols"
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10845
+      },
+      "points": null,
+      "pos": null,
+      "min": null,
+      "fgm": null,
+      "fga": null,
+      "fgp": null,
+      "ftm": null,
+      "fta": null,
+      "ftp": null,
+      "tpm": null,
+      "tpa": null,
+      "tpp": null,
+      "offReb": null,
+      "defReb": null,
+      "totReb": null,
+      "assists": null,
+      "pFouls": null,
+      "steals": null,
+      "turnovers": null,
+      "blocks": null,
+      "plusMinus": null,
+      "comment": "NWT - Health and Safety Protocols"
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10854
+      },
+      "points": null,
+      "pos": null,
+      "min": null,
+      "fgm": null,
+      "fga": null,
+      "fgp": null,
+      "ftm": null,
+      "fta": null,
+      "ftp": null,
+      "tpm": null,
+      "tpa": null,
+      "tpp": null,
+      "offReb": null,
+      "defReb": null,
+      "totReb": null,
+      "assists": null,
+      "pFouls": null,
+      "steals": null,
+      "turnovers": null,
+      "blocks": null,
+      "plusMinus": null,
+      "comment": "NWT - Health and Safety Protocols"
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 8791
+      },
+      "points": 46,
+      "pos": "SG",
+      "min": "45:57",
+      "fgm": 16,
+      "fga": 30,
+      "fgp": "53.3",
+      "ftm": 6,
+      "fta": 8,
+      "ftp": "75.0",
+      "tpm": 8,
+      "tpa": 14,
+      "tpp": "57.1",
+      "offReb": 0,
+      "defReb": 9,
+      "totReb": 9,
+      "assists": 6,
+      "pFouls": 5,
+      "steals": 3,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "16",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9585
+      },
+      "points": 9,
+      "pos": "SG",
+      "min": "28:24",
+      "fgm": 3,
+      "fga": 13,
+      "fgp": "23.1",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 0,
+      "tpa": 7,
+      "tpp": "0.0",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9606
+      },
+      "points": 30,
+      "pos": "PF",
+      "min": "37:59",
+      "fgm": 12,
+      "fga": 20,
+      "fgp": "60.0",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 3,
+      "defReb": 6,
+      "totReb": 9,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 3,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "12",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9621
+      },
+      "points": 13,
+      "pos": "SG",
+      "min": "37:21",
+      "fgm": 5,
+      "fga": 16,
+      "fgp": "31.2",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 1,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9643
+      },
+      "points": 34,
+      "pos": "SG",
+      "min": "47:23",
+      "fgm": 14,
+      "fga": 24,
+      "fgp": "58.3",
+      "ftm": 6,
+      "fta": 7,
+      "ftp": "85.7",
+      "tpm": 0,
+      "tpa": 5,
+      "tpp": "0.0",
+      "offReb": 0,
+      "defReb": 6,
+      "totReb": 6,
+      "assists": 2,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "-6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9663
+      },
+      "points": 28,
+      "pos": "SG",
+      "min": "33:35",
+      "fgm": 10,
+      "fga": 18,
+      "fgp": "55.6",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 5,
+      "tpa": 8,
+      "tpp": "62.5",
+      "offReb": 0,
+      "defReb": 7,
+      "totReb": 7,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 8896
+      },
+      "points": 28,
+      "pos": "SG",
+      "min": "31:47",
+      "fgm": 10,
+      "fga": 17,
+      "fgp": "58.8",
+      "ftm": 5,
+      "fta": 7,
+      "ftp": "71.4",
+      "tpm": 3,
+      "tpa": 8,
+      "tpp": "37.5",
+      "offReb": 0,
+      "defReb": 5,
+      "totReb": 5,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "16",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 8907
+      },
+      "points": 17,
+      "pos": "SG",
+      "min": "29:17",
+      "fgm": 5,
+      "fga": 14,
+      "fgp": "35.7",
+      "ftm": 4,
+      "fta": 5,
+      "ftp": "80.0",
+      "tpm": 3,
+      "tpa": 5,
+      "tpp": "60.0",
+      "offReb": 0,
+      "defReb": 5,
+      "totReb": 5,
+      "assists": 2,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "12",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9821
+      },
+      "points": 19,
+      "pos": "SG",
+      "min": "22:47",
+      "fgm": 6,
+      "fga": 13,
+      "fgp": "46.2",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 0,
+      "pFouls": 4,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "21",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9835
+      },
+      "points": 13,
+      "pos": "SG",
+      "min": "23:57",
+      "fgm": 5,
+      "fga": 15,
+      "fgp": "33.3",
+      "ftm": 3,
+      "fta": 3,
+      "ftp": "100",
+      "tpm": 0,
+      "tpa": 8,
+      "tpp": "0.0",
+      "offReb": 1,
+      "defReb": 4,
+      "totReb": 5,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-7",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9852
+      },
+      "points": 16,
+      "pos": "SF",
+      "min": "27:05",
+      "fgm": 6,
+      "fga": 16,
+      "fgp": "37.5",
+      "ftm": 1,
+      "fta": 3,
+      "ftp": "33.3",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 3,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 1,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9867
+      },
+      "points": 16,
+      "pos": "SG",
+      "min": "27:26",
+      "fgm": 6,
+      "fga": 11,
+      "fgp": "54.5",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 1,
+      "tpa": 2,
+      "tpp": "50.0",
+      "offReb": 2,
+      "defReb": 1,
+      "totReb": 3,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9108
+      },
+      "points": 9,
+      "pos": "SG",
+      "min": "33:27",
+      "fgm": 3,
+      "fga": 11,
+      "fgp": "27.3",
+      "ftm": 2,
+      "fta": 4,
+      "ftp": "50.0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9194
+      },
+      "points": 19,
+      "pos": "SG",
+      "min": "29:58",
+      "fgm": 6,
+      "fga": 13,
+      "fgp": "46.2",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "20",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9221
+      },
+      "points": 20,
+      "pos": "SG",
+      "min": "33:18",
+      "fgm": 8,
+      "fga": 16,
+      "fgp": "50.0",
+      "ftm": 0,
+      "fta": 2,
+      "ftp": "0.0",
+      "tpm": 4,
+      "tpa": 7,
+      "tpp": "57.1",
+      "offReb": 2,
+      "defReb": 7,
+      "totReb": 9,
+      "assists": 2,
+      "pFouls": 4,
+      "steals": 1,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10010
+      },
+      "points": 23,
+      "pos": "SF",
+      "min": "32:29",
+      "fgm": 8,
+      "fga": 21,
+      "fgp": "38.1",
+      "ftm": 2,
+      "fta": 4,
+      "ftp": "50.0",
+      "tpm": 5,
+      "tpa": 13,
+      "tpp": "38.5",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10022
+      },
+      "points": 30,
+      "pos": "SF",
+      "min": "34:23",
+      "fgm": 9,
+      "fga": 22,
+      "fgp": "40.9",
+      "ftm": 9,
+      "fta": 10,
+      "ftp": "90.0",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 3,
+      "totReb": 5,
+      "assists": 4,
+      "pFouls": 3,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10036
+      },
+      "points": 34,
+      "pos": "SG",
+      "min": "35:36",
+      "fgm": 12,
+      "fga": 22,
+      "fgp": "54.5",
+      "ftm": 5,
+      "fta": 5,
+      "ftp": "100",
+      "tpm": 5,
+      "tpa": 10,
+      "tpp": "50.0",
+      "offReb": 2,
+      "defReb": 4,
+      "totReb": 6,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "14",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10054
+      },
+      "points": 25,
+      "pos": "SG",
+      "min": "37:14",
+      "fgm": 8,
+      "fga": 18,
+      "fgp": "44.4",
+      "ftm": 7,
+      "fta": 7,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 7,
+      "tpp": "28.6",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "-15",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10068
+      },
+      "points": 26,
+      "pos": "SF",
+      "min": "39:24",
+      "fgm": 8,
+      "fga": 24,
+      "fgp": "33.3",
+      "ftm": 8,
+      "fta": 13,
+      "ftp": "61.5",
+      "tpm": 2,
+      "tpa": 8,
+      "tpp": "25.0",
+      "offReb": 3,
+      "defReb": 7,
+      "totReb": 10,
+      "assists": 4,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 6,
+      "blocks": 1,
+      "plusMinus": "11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10083
+      },
+      "points": 30,
+      "pos": "SF",
+      "min": "39:52",
+      "fgm": 13,
+      "fga": 36,
+      "fgp": "36.1",
+      "ftm": 3,
+      "fta": 5,
+      "ftp": "60.0",
+      "tpm": 1,
+      "tpa": 13,
+      "tpp": "7.7",
+      "offReb": 2,
+      "defReb": 6,
+      "totReb": 8,
+      "assists": 0,
+      "pFouls": 3,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 9315
+      },
+      "points": 24,
+      "pos": "SG",
+      "min": "35:57",
+      "fgm": 8,
+      "fga": 20,
+      "fgp": "40.0",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 1,
+      "defReb": 10,
+      "totReb": 11,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 6,
+      "blocks": 0,
+      "plusMinus": "6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10111
+      },
+      "points": 50,
+      "pos": "SF",
+      "min": "46:08",
+      "fgm": 19,
+      "fga": 29,
+      "fgp": "65.5",
+      "ftm": 7,
+      "fta": 8,
+      "ftp": "87.5",
+      "tpm": 5,
+      "tpa": 10,
+      "tpp": "50.0",
+      "offReb": 0,
+      "defReb": 11,
+      "totReb": 11,
+      "assists": 4,
+      "pFouls": 4,
+      "steals": 1,
+      "turnovers": 7,
+      "blocks": 2,
+      "plusMinus": "10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10135
+      },
+      "points": 30,
+      "pos": "SG",
+      "min": "35:03",
+      "fgm": 12,
+      "fga": 25,
+      "fgp": "48.0",
+      "ftm": 2,
+      "fta": 3,
+      "ftp": "66.7",
+      "tpm": 4,
+      "tpa": 8,
+      "tpp": "50.0",
+      "offReb": 0,
+      "defReb": 6,
+      "totReb": 6,
+      "assists": 1,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10143
+      },
+      "points": 16,
+      "pos": "SG",
+      "min": "34:16",
+      "fgm": 6,
+      "fga": 14,
+      "fgp": "42.9",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 8,
+      "tpp": "25.0",
+      "offReb": 0,
+      "defReb": 7,
+      "totReb": 7,
+      "assists": 1,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10160
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "34:48",
+      "fgm": 9,
+      "fga": 15,
+      "fgp": "60.0",
+      "ftm": 2,
+      "fta": 3,
+      "ftp": "66.7",
+      "tpm": 2,
+      "tpa": 4,
+      "tpp": "50.0",
+      "offReb": 2,
+      "defReb": 9,
+      "totReb": 11,
+      "assists": 11,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "23",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10174
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "43:53",
+      "fgm": 11,
+      "fga": 26,
+      "fgp": "42.3",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 2,
+      "defReb": 13,
+      "totReb": 15,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 0,
+      "blocks": 1,
+      "plusMinus": "1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10183
+      },
+      "points": 34,
+      "pos": "SG",
+      "min": "35:11",
+      "fgm": 11,
+      "fga": 19,
+      "fgp": "57.9",
+      "ftm": 5,
+      "fta": 5,
+      "ftp": "100",
+      "tpm": 7,
+      "tpa": 11,
+      "tpp": "63.6",
+      "offReb": 0,
+      "defReb": 5,
+      "totReb": 5,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "14",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10200
+      },
+      "points": 21,
+      "pos": "SG",
+      "min": "32:01",
+      "fgm": 7,
+      "fga": 18,
+      "fgp": "38.9",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 2,
+      "tpa": 9,
+      "tpp": "22.2",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 1,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "-11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10212
+      },
+      "points": 19,
+      "pos": "SG",
+      "min": "35:40",
+      "fgm": 8,
+      "fga": 19,
+      "fgp": "42.1",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 0,
+      "tpa": 5,
+      "tpp": "0.0",
+      "offReb": 2,
+      "defReb": 5,
+      "totReb": 7,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 4,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "0",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10219
+      },
+      "points": 23,
+      "pos": "SG",
+      "min": "34:51",
+      "fgm": 8,
+      "fga": 17,
+      "fgp": "47.1",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 0,
+      "defReb": 8,
+      "totReb": 8,
+      "assists": 2,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10236
+      },
+      "points": 21,
+      "pos": "SG",
+      "min": "38:09",
+      "fgm": 9,
+      "fga": 20,
+      "fgp": "45.0",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 2,
+      "tpa": 11,
+      "tpp": "18.2",
+      "offReb": 0,
+      "defReb": 6,
+      "totReb": 6,
+      "assists": 6,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-9",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10253
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "34:57",
+      "fgm": 7,
+      "fga": 20,
+      "fgp": "35.0",
+      "ftm": 6,
+      "fta": 6,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 7,
+      "tpp": "28.6",
+      "offReb": 0,
+      "defReb": 5,
+      "totReb": 5,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10264
+      },
+      "points": 18,
+      "pos": "SG",
+      "min": "30:44",
+      "fgm": 5,
+      "fga": 18,
+      "fgp": "27.8",
+      "ftm": 4,
+      "fta": 6,
+      "ftp": "66.7",
+      "tpm": 4,
+      "tpa": 9,
+      "tpp": "44.4",
+      "offReb": 2,
+      "defReb": 8,
+      "totReb": 10,
+      "assists": 1,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "12",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10282
+      },
+      "points": 30,
+      "pos": "SG",
+      "min": "23:57",
+      "fgm": 11,
+      "fga": 19,
+      "fgp": "57.9",
+      "ftm": 3,
+      "fta": 3,
+      "ftp": "100",
+      "tpm": 5,
+      "tpa": 12,
+      "tpp": "41.7",
+      "offReb": 0,
+      "defReb": 10,
+      "totReb": 10,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "35",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10302
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "35:20",
+      "fgm": 9,
+      "fga": 22,
+      "fgp": "40.9",
+      "ftm": 6,
+      "fta": 7,
+      "ftp": "85.7",
+      "tpm": 2,
+      "tpa": 9,
+      "tpp": "22.2",
+      "offReb": 2,
+      "defReb": 10,
+      "totReb": 12,
+      "assists": 3,
+      "pFouls": 5,
+      "steals": 0,
+      "turnovers": 7,
+      "blocks": 0,
+      "plusMinus": "-9",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10310
+      },
+      "points": 31,
+      "pos": "SG",
+      "min": "35:15",
+      "fgm": 11,
+      "fga": 20,
+      "fgp": "55.0",
+      "ftm": 5,
+      "fta": 7,
+      "ftp": "71.4",
+      "tpm": 4,
+      "tpa": 9,
+      "tpp": "44.4",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "17",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10327
+      },
+      "points": 29,
+      "pos": "SG",
+      "min": "31:30",
+      "fgm": 11,
+      "fga": 19,
+      "fgp": "57.9",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 2,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "28",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10340
+      },
+      "points": 15,
+      "pos": "SG",
+      "min": "38:25",
+      "fgm": 7,
+      "fga": 15,
+      "fgp": "46.7",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 0,
+      "tpa": 3,
+      "tpp": "0.0",
+      "offReb": 1,
+      "defReb": 5,
+      "totReb": 6,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 7,
+      "blocks": 0,
+      "plusMinus": "-4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10353
+      },
+      "points": 13,
+      "pos": "PG",
+      "min": "33:34",
+      "fgm": 5,
+      "fga": 15,
+      "fgp": "33.3",
+      "ftm": 2,
+      "fta": 5,
+      "ftp": "40.0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 1,
+      "defReb": 6,
+      "totReb": 7,
+      "assists": 2,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 1,
+      "plusMinus": "12",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10371
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "28:49",
+      "fgm": 10,
+      "fga": 22,
+      "fgp": "45.5",
+      "ftm": 5,
+      "fta": 5,
+      "ftp": "100",
+      "tpm": 1,
+      "tpa": 9,
+      "tpp": "11.1",
+      "offReb": 1,
+      "defReb": 4,
+      "totReb": 5,
+      "assists": 3,
+      "pFouls": 2,
+      "steals": 3,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "15",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10382
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "27:36",
+      "fgm": 9,
+      "fga": 12,
+      "fgp": "75.0",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 1,
+      "tpa": 3,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 7,
+      "totReb": 7,
+      "assists": 9,
+      "pFouls": 0,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "40",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10407
+      },
+      "points": 12,
+      "pos": "SG",
+      "min": "39:07",
+      "fgm": 4,
+      "fga": 17,
+      "fgp": "23.5",
+      "ftm": 4,
+      "fta": 7,
+      "ftp": "57.1",
+      "tpm": 0,
+      "tpa": 6,
+      "tpp": "0.0",
+      "offReb": 0,
+      "defReb": 7,
+      "totReb": 7,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10421
+      },
+      "points": 17,
+      "pos": "SG",
+      "min": "37:38",
+      "fgm": 6,
+      "fga": 16,
+      "fgp": "37.5",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 7,
+      "totReb": 9,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10434
+      },
+      "points": 29,
+      "pos": "SG",
+      "min": "29:01",
+      "fgm": 10,
+      "fga": 17,
+      "fgp": "58.8",
+      "ftm": 4,
+      "fta": 6,
+      "ftp": "66.7",
+      "tpm": 5,
+      "tpa": 7,
+      "tpp": "71.4",
+      "offReb": 1,
+      "defReb": 7,
+      "totReb": 8,
+      "assists": 3,
+      "pFouls": 0,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "32",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10440
+      },
+      "points": 31,
+      "pos": "SG",
+      "min": "37:57",
+      "fgm": 12,
+      "fga": 21,
+      "fgp": "57.1",
+      "ftm": 4,
+      "fta": 5,
+      "ftp": "80.0",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10455
+      },
+      "points": 18,
+      "pos": "SG",
+      "min": "29:44",
+      "fgm": 6,
+      "fga": 12,
+      "fgp": "50.0",
+      "ftm": 5,
+      "fta": 8,
+      "ftp": "62.5",
+      "tpm": 1,
+      "tpa": 5,
+      "tpp": "20.0",
+      "offReb": 0,
+      "defReb": 1,
+      "totReb": 1,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 1,
+      "plusMinus": "16",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10470
+      },
+      "points": 27,
+      "pos": "SG",
+      "min": "35:47",
+      "fgm": 10,
+      "fga": 24,
+      "fgp": "41.7",
+      "ftm": 6,
+      "fta": 6,
+      "ftp": "100",
+      "tpm": 1,
+      "tpa": 6,
+      "tpp": "16.7",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 0,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10479
+      },
+      "points": 23,
+      "pos": "SG",
+      "min": "35:13",
+      "fgm": 10,
+      "fga": 16,
+      "fgp": "62.5",
+      "ftm": 1,
+      "fta": 4,
+      "ftp": "25.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 8,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-13",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10492
+      },
+      "points": 2,
+      "pos": "SG",
+      "min": "2:48",
+      "fgm": 1,
+      "fga": 1,
+      "fgp": "100",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0.0",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0.0",
+      "offReb": 0,
+      "defReb": 1,
+      "totReb": 1,
+      "assists": 1,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10525
+      },
+      "points": 21,
+      "pos": "SG",
+      "min": "34:54",
+      "fgm": 8,
+      "fga": 17,
+      "fgp": "47.1",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 3,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10546
+      },
+      "points": 15,
+      "pos": "SG",
+      "min": "36:18",
+      "fgm": 6,
+      "fga": 16,
+      "fgp": "37.5",
+      "ftm": 2,
+      "fta": 5,
+      "ftp": "40.0",
+      "tpm": 1,
+      "tpa": 8,
+      "tpp": "12.5",
+      "offReb": 2,
+      "defReb": 3,
+      "totReb": 5,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10562
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "33:39",
+      "fgm": 8,
+      "fga": 22,
+      "fgp": "36.4",
+      "ftm": 5,
+      "fta": 7,
+      "ftp": "71.4",
+      "tpm": 1,
+      "tpa": 8,
+      "tpp": "12.5",
+      "offReb": 2,
+      "defReb": 6,
+      "totReb": 8,
+      "assists": 4,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "18",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10579
+      },
+      "points": 14,
+      "pos": "SG",
+      "min": "35:06",
+      "fgm": 6,
+      "fga": 16,
+      "fgp": "37.5",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0.0",
+      "tpm": 2,
+      "tpa": 7,
+      "tpp": "28.6",
+      "offReb": 1,
+      "defReb": 4,
+      "totReb": 5,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10607
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "34:51",
+      "fgm": 9,
+      "fga": 21,
+      "fgp": "42.9",
+      "ftm": 6,
+      "fta": 7,
+      "ftp": "85.7",
+      "tpm": 2,
+      "tpa": 8,
+      "tpp": "25.0",
+      "offReb": 2,
+      "defReb": 5,
+      "totReb": 7,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "26",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10622
+      },
+      "points": 30,
+      "pos": "SG",
+      "min": "28:09",
+      "fgm": 11,
+      "fga": 18,
+      "fgp": "61.1",
+      "ftm": 5,
+      "fta": 8,
+      "ftp": "62.5",
+      "tpm": 3,
+      "tpa": 5,
+      "tpp": "60.0",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10633
+      },
+      "points": 30,
+      "pos": "SG",
+      "min": "34:11",
+      "fgm": 12,
+      "fga": 19,
+      "fgp": "63.2",
+      "ftm": 3,
+      "fta": 3,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 0,
+      "defReb": 6,
+      "totReb": 6,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "27",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10643
+      },
+      "points": 25,
+      "pos": "PG",
+      "min": "38:33",
+      "fgm": 10,
+      "fga": 19,
+      "fgp": "52.6",
+      "ftm": 3,
+      "fta": 6,
+      "ftp": "50.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 1,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10652
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "32:00",
+      "fgm": 10,
+      "fga": 17,
+      "fgp": "58.8",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 3,
+      "tpa": 6,
+      "tpp": "50.0",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 5,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "20",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10681
+      },
+      "points": 31,
+      "pos": "SG",
+      "min": "34:40",
+      "fgm": 12,
+      "fga": 20,
+      "fgp": "60.0",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 3,
+      "tpa": 5,
+      "tpp": "60.0",
+      "offReb": 1,
+      "defReb": 9,
+      "totReb": 10,
+      "assists": 2,
+      "pFouls": 0,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10704
+      },
+      "points": 28,
+      "pos": "SG",
+      "min": "37:12",
+      "fgm": 9,
+      "fga": 22,
+      "fgp": "40.9",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 5,
+      "tpa": 9,
+      "tpp": "55.6",
+      "offReb": 1,
+      "defReb": 9,
+      "totReb": 10,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10718
+      },
+      "points": 32,
+      "pos": "SG",
+      "min": "35:05",
+      "fgm": 12,
+      "fga": 18,
+      "fgp": "66.7",
+      "ftm": 6,
+      "fta": 6,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 7,
+      "pFouls": 5,
+      "steals": 2,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10731
+      },
+      "points": 32,
+      "pos": "SG",
+      "min": "28:34",
+      "fgm": 12,
+      "fga": 17,
+      "fgp": "70.6",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 4,
+      "tpa": 5,
+      "tpp": "80.0",
+      "offReb": 0,
+      "defReb": 7,
+      "totReb": 7,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "36",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10758
+      },
+      "points": 25,
+      "pos": "SG",
+      "min": "34:40",
+      "fgm": 10,
+      "fga": 21,
+      "fgp": "47.6",
+      "ftm": 3,
+      "fta": 6,
+      "ftp": "50.0",
+      "tpm": 2,
+      "tpa": 4,
+      "tpp": "50.0",
+      "offReb": 1,
+      "defReb": 6,
+      "totReb": 7,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 4,
+      "turnovers": 1,
+      "blocks": 1,
+      "plusMinus": "22",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10763
+      },
+      "points": 22,
+      "pos": "SF",
+      "min": "37:28",
+      "fgm": 8,
+      "fga": 20,
+      "fgp": "40.0",
+      "ftm": 4,
+      "fta": 7,
+      "ftp": "57.1",
+      "tpm": 2,
+      "tpa": 8,
+      "tpp": "25.0",
+      "offReb": 1,
+      "defReb": 9,
+      "totReb": 10,
+      "assists": 11,
+      "pFouls": 5,
+      "steals": 1,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10788
+      },
+      "points": 18,
+      "pos": "SG",
+      "min": "23:03",
+      "fgm": 8,
+      "fga": 16,
+      "fgp": "50.0",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0.0",
+      "tpm": 2,
+      "tpa": 7,
+      "tpp": "28.6",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 4,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10874
+      },
+      "points": 23,
+      "pos": "SG",
+      "min": "39:44",
+      "fgm": 9,
+      "fga": 19,
+      "fgp": "47.4",
+      "ftm": 4,
+      "fta": 6,
+      "ftp": "66.7",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 1,
+      "defReb": 4,
+      "totReb": 5,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 4,
+      "turnovers": 2,
+      "blocks": 2,
+      "plusMinus": "10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10880
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "39:20",
+      "fgm": 9,
+      "fga": 18,
+      "fgp": "50.0",
+      "ftm": 2,
+      "fta": 3,
+      "ftp": "66.7",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 6,
+      "pFouls": 2,
+      "steals": 3,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10887
+      },
+      "points": 23,
+      "pos": "SG",
+      "min": "37:37",
+      "fgm": 9,
+      "fga": 16,
+      "fgp": "56.2",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10893
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "37:56",
+      "fgm": 9,
+      "fga": 20,
+      "fgp": "45.0",
+      "ftm": 4,
+      "fta": 5,
+      "ftp": "80.0",
+      "tpm": 0,
+      "tpa": 5,
+      "tpp": "0.0",
+      "offReb": 0,
+      "defReb": 8,
+      "totReb": 8,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10928
+      },
+      "points": 12,
+      "pos": "SG",
+      "min": "38:00",
+      "fgm": 4,
+      "fga": 13,
+      "fgp": "30.8",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 7,
+      "totReb": 9,
+      "assists": 4,
+      "pFouls": 4,
+      "steals": 2,
+      "turnovers": 7,
+      "blocks": 0,
+      "plusMinus": "-12",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10929
+      },
+      "points": 30,
+      "pos": "SG",
+      "min": "38:13",
+      "fgm": 11,
+      "fga": 18,
+      "fgp": "61.1",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 6,
+      "tpa": 10,
+      "tpp": "60.0",
+      "offReb": 2,
+      "defReb": 4,
+      "totReb": 6,
+      "assists": 6,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "16",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10930
+      },
+      "points": 27,
+      "pos": "SG",
+      "min": "39:38",
+      "fgm": 8,
+      "fga": 16,
+      "fgp": "50.0",
+      "ftm": 10,
+      "fta": 11,
+      "ftp": "90.9",
+      "tpm": 1,
+      "tpa": 5,
+      "tpp": "20.0",
+      "offReb": 0,
+      "defReb": 12,
+      "totReb": 12,
+      "assists": 4,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "-4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10931
+      },
+      "points": 18,
+      "pos": "SG",
+      "min": "32:04",
+      "fgm": 5,
+      "fga": 11,
+      "fgp": "45.5",
+      "ftm": 6,
+      "fta": 6,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 1,
+      "pFouls": 5,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10932
+      },
+      "points": 26,
+      "pos": "SG",
+      "min": "35:15",
+      "fgm": 9,
+      "fga": 19,
+      "fgp": "47.4",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 2,
+      "defReb": 6,
+      "totReb": 8,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "-7",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10933
+      },
+      "points": 22,
+      "pos": "SG",
+      "min": "40:40",
+      "fgm": 7,
+      "fga": 16,
+      "fgp": "43.8",
+      "ftm": 4,
+      "fta": 7,
+      "ftp": "57.1",
+      "tpm": 4,
+      "tpa": 7,
+      "tpp": "57.1",
+      "offReb": 2,
+      "defReb": 3,
+      "totReb": 5,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10934
+      },
+      "points": 19,
+      "pos": "SG",
+      "min": "36:46",
+      "fgm": 8,
+      "fga": 16,
+      "fgp": "50.0",
+      "ftm": 1,
+      "fta": 4,
+      "ftp": "25.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 1,
+      "defReb": 7,
+      "totReb": 8,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "15",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10956
+      },
+      "points": 24,
+      "pos": "SG",
+      "min": "42:47",
+      "fgm": 7,
+      "fga": 17,
+      "fgp": "41.2",
+      "ftm": 6,
+      "fta": 10,
+      "ftp": "60.0",
+      "tpm": 4,
+      "tpa": 8,
+      "tpp": "50.0",
+      "offReb": 2,
+      "defReb": 8,
+      "totReb": 10,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10957
+      },
+      "points": 24,
+      "pos": "SG",
+      "min": "33:15",
+      "fgm": 9,
+      "fga": 17,
+      "fgp": "52.9",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 4,
+      "tpa": 7,
+      "tpp": "57.1",
+      "offReb": 2,
+      "defReb": 6,
+      "totReb": 8,
+      "assists": 3,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "13",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10958
+      },
+      "points": 40,
+      "pos": "SG",
+      "min": "41:44",
+      "fgm": 14,
+      "fga": 20,
+      "fgp": "70.0",
+      "ftm": 9,
+      "fta": 12,
+      "ftp": "75.0",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 7,
+      "totReb": 9,
+      "assists": 1,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 7,
+      "blocks": 1,
+      "plusMinus": "-6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10959
+      },
+      "points": 12,
+      "pos": "SG",
+      "min": "29:10",
+      "fgm": 5,
+      "fga": 20,
+      "fgp": "25.0",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 1,
+      "tpa": 6,
+      "tpp": "16.7",
+      "offReb": 2,
+      "defReb": 5,
+      "totReb": 7,
+      "assists": 2,
+      "pFouls": 5,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "23",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10960
+      },
+      "points": 25,
+      "pos": "SG",
+      "min": "39:49",
+      "fgm": 10,
+      "fga": 19,
+      "fgp": "52.6",
+      "ftm": 0,
+      "fta": 1,
+      "ftp": "0.0",
+      "tpm": 5,
+      "tpa": 9,
+      "tpp": "55.6",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 1,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "20",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10961
+      },
+      "points": 20,
+      "pos": "SG",
+      "min": "41:07",
+      "fgm": 6,
+      "fga": 13,
+      "fgp": "46.2",
+      "ftm": 7,
+      "fta": 9,
+      "ftp": "77.8",
+      "tpm": 1,
+      "tpa": 3,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 4,
+      "totReb": 6,
+      "assists": 5,
+      "pFouls": 6,
+      "steals": 2,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "-9",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10962
+      },
+      "points": 24,
+      "pos": "SG",
+      "min": "43:38",
+      "fgm": 8,
+      "fga": 15,
+      "fgp": "53.3",
+      "ftm": 7,
+      "fta": 8,
+      "ftp": "87.5",
+      "tpm": 1,
+      "tpa": 5,
+      "tpp": "20.0",
+      "offReb": 1,
+      "defReb": 5,
+      "totReb": 6,
+      "assists": 6,
+      "pFouls": 5,
+      "steals": 0,
+      "turnovers": 4,
+      "blocks": 0,
+      "plusMinus": "8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10970
+      },
+      "points": 24,
+      "pos": "SG",
+      "min": "37:59",
+      "fgm": 10,
+      "fga": 23,
+      "fgp": "43.5",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100",
+      "tpm": 2,
+      "tpa": 8,
+      "tpp": "25.0",
+      "offReb": 2,
+      "defReb": 5,
+      "totReb": 7,
+      "assists": 5,
+      "pFouls": 1,
+      "steals": 2,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "22",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10977
+      },
+      "points": 17,
+      "pos": "SG",
+      "min": "27:37",
+      "fgm": 5,
+      "fga": 17,
+      "fgp": "29.4",
+      "ftm": 4,
+      "fta": 5,
+      "ftp": "80.0",
+      "tpm": 3,
+      "tpa": 9,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 6,
+      "totReb": 6,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10972
+      },
+      "points": 27,
+      "pos": "SG",
+      "min": "39:40",
+      "fgm": 9,
+      "fga": 16,
+      "fgp": "56.2",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 4,
+      "tpa": 8,
+      "tpp": "50.0",
+      "offReb": 3,
+      "defReb": 6,
+      "totReb": 9,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "7",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10973
+      },
+      "points": 21,
+      "pos": "SG",
+      "min": "39:42",
+      "fgm": 9,
+      "fga": 19,
+      "fgp": "47.4",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 4,
+      "totReb": 6,
+      "assists": 2,
+      "pFouls": 5,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "0",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10974
+      },
+      "points": 18,
+      "pos": "SG",
+      "min": "44:03",
+      "fgm": 5,
+      "fga": 18,
+      "fgp": "27.8",
+      "ftm": 8,
+      "fta": 10,
+      "ftp": "80.0",
+      "tpm": 0,
+      "tpa": 5,
+      "tpp": "0.0",
+      "offReb": 3,
+      "defReb": 6,
+      "totReb": 9,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "-19",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+      },
+      "game": {
+        "id": 10975
+      },
+      "points": 34,
+      "pos": "SG",
+      "min": "44:00",
+      "fgm": 12,
+      "fga": 23,
+      "fgp": "52.2",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 5,
+      "tpa": 11,
+      "tpp": "45.5",
+      "offReb": 1,
+      "defReb": 6,
+      "totReb": 7,
+      "assists": 3,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 5,
+      "blocks": 0,
+      "plusMinus": "1",
+      "comment": null
+    }
+  ]
+}

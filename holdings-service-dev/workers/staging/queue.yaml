@@ -1,0 +1,8 @@
+queue:
+- name: doko-data-queue-stg
+  bucket_size: 500
+  rate: 10/s
+  retry_parameters:
+    task_retry_limit: 10
+    min_backoff_seconds: 5
+  target: doko-data-worker-stg

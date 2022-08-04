@@ -1,0 +1,35 @@
+steps:
+  # Step 1 builds the image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build',
+        '--build-arg',
+        'INFURA_KEY=${_INFURA_KEY}',
+        '--build-arg',
+        'MONGO_URI=${_MONGO_URI}',
+        '--build-arg',
+        'OPEN_SEA_API_KEY=${_OPEN_SEA_API_KEY}',
+        '-f',
+        'workers/prod/Dockerfile.worker',
+        '-t',
+        'gcr.io/wallettracker-328605/doko-data-worker:$SHORT_SHA',
+        '.',
+      ]
+
+  # Step 2 pushes the image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/wallettracker-328605/doko-data-worker']
+
+  # Step 3 deploy the image
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      [
+        'app',
+        'deploy',
+        'workers/prod/app.yaml',
+        '--image-url=gcr.io/wallettracker-328605/doko-data-worker:$SHORT_SHA',
+        '--version=prod',
+      ]
+# Note that this build pushes this image.
+images: ['gcr.io/wallettracker-328605/doko-data-worker:$SHORT_SHA']

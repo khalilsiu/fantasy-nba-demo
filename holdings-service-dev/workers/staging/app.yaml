@@ -1,0 +1,8 @@
+runtime: nodejs16
+service: doko-data-worker-stg
+env: flexible
+instance_class: B1
+manual_scaling:
+  instances: 1
+network:
+  session_affinity: true
