@@ -23,15 +23,15 @@ export class OracleService {
     );
     return playerStats;
   }
-  public static async fetchPlayer(team: number, season: number): Promise<any> {
+  public static async fetchTeam(team: number, season: number): Promise<any> {
     this.logger.log(
-      `OracleService fetchPlayer, team: ${team}, season: ${season}`,
+      `OracleService fetchTeam, team: ${team}, season: ${season}`,
     );
     const fetchAssetUri = `${uri}/player`;
-    this.logger.log(`OracleService fetchPlayer ${fetchAssetUri}`);
+    this.logger.log(`OracleService fetchTeam ${fetchAssetUri}`);
     const res = await fetch(fetchAssetUri + `?team=${team}&season=${season}`);
     const player = await res.json();
-    this.logger.log(`OracleService fetchPlayer ${JSON.stringify(player)}`);
+    this.logger.log(`OracleService fetchTeam ${JSON.stringify(player)}`);
     return player;
   }
 }

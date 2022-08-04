@@ -69,45 +69,45 @@ export class Player {
 
   @IsString()
   @Length(2, 255)
-  firstname: string;
+  readonly firstname: string;
 
   @IsString()
   @Length(2, 255)
-  lastname: string;
+  readonly lastname: string;
 
   @ValidateNested({ each: true })
   @Type(() => Birth)
-  birth: Birth;
+  readonly birth: Birth;
 
   @ValidateNested({ each: true })
   @Type(() => Nba)
-  nba: Nba;
+  readonly nba: Nba;
 
   @ValidateNested({ each: true })
   @Type(() => Height)
-  height: Height;
+  readonly height: Height;
 
   @ValidateNested({ each: true })
   @Type(() => Weight)
-  weight: Weight;
+  readonly weight: Weight;
 
   @IsString()
   @Length(2, 255)
-  college: string;
+  readonly college: string;
 
   @IsString()
   @Length(2, 255)
-  affiliation: string;
+  readonly affiliation: string;
 
   @IsNumber()
-  jersey: number;
+  readonly jersey: number;
 
   @IsBoolean()
-  active: boolean;
+  readonly active: boolean;
 
   @IsString()
   @Length(1, 10)
-  pos: string;
+  readonly pos: string;
 
   static readonly logger = new Logger(Player.name);
   constructor({
