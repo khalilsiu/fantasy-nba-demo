@@ -23,12 +23,16 @@ export class FetchPlayersAndStatsUseCase {
     try {
       this.logger.log(`FetchPlayersAndStatsUseCase`);
 
-      const fetchTeamsPromises = teamIds.map(teamId => years.map(year=> OracleService.fetchTeam(teamId,year)))
+      const fetchTeamsPromises = []
+
+      teamIds.forEach(teamId => years.forEach(year => {
+        fetchTeamsPromises.push(OracleService.fetchTeam(teamId, year))
+      }))
 
       const teams = await Promise.all(fetchTeamsPromises)
 
       console.log(teams);
-      
+
 
       return right(Result.ok<any>());
     } catch (err) {

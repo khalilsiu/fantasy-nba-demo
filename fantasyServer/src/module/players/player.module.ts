@@ -5,4 +5,4 @@ import { FetchPlayersAndStatsUseCase } from './useCases/fetchPlayersAndStats/fet
   controllers: [],
   providers: [FetchPlayersAndStatsUseCase],
 })
-export class DataModule {}
+export class PlayerModule {}

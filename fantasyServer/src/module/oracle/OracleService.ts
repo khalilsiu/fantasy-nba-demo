@@ -27,7 +27,8 @@ export class OracleService {
     this.logger.log(
       `OracleService fetchTeam, team: ${team}, season: ${season}`,
     );
-    const fetchAssetUri = `${uri}/player`;
+    const fetchAssetUri = `${uri}/players`;
+    console.log({fetchAssetUri})
     this.logger.log(`OracleService fetchTeam ${fetchAssetUri}`);
     const res = await fetch(fetchAssetUri + `?team=${team}&season=${season}`);
     const player = await res.json();

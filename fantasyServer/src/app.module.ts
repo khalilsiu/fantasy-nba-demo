@@ -1,13 +1,13 @@
 import { Module, Logger } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { DataModule } from './module/data/data.module';
 import { WinstonModule } from 'nest-winston';
 import { ScheduleModule } from '@nestjs/schedule';
+import { PlayerModule } from './module/players/player.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    DataModule,
+    PlayerModule,
     WinstonModule,
     ScheduleModule.forRoot(),
   ],
