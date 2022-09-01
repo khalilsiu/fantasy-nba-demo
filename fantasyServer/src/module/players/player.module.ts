@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { DataController } from './data.controller';
-import { FetchPlayersUseCase } from './useCases/fetchPlayers/fetchPlayersUseCase';
-import { FetchPlayerStatsUseCase } from './useCases/fetchPlayerStats/fetchPlayerStatsUseCase';
+import { FetchPlayersAndStatsUseCase } from './useCases/fetchPlayersAndStats/fetchPlayersAndStatsUseCase';
 
 @Module({
-  controllers: [DataController],
-  providers: [FetchPlayersUseCase, FetchPlayerStatsUseCase],
+  controllers: [],
+  providers: [FetchPlayersAndStatsUseCase],
 })
 export class DataModule {}
