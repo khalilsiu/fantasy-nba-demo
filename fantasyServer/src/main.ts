@@ -28,7 +28,7 @@ const winstonLogging = WinstonModule.createLogger({
     // Add Stackdriver Logging
     loggingWinston,
   ],
-})
+});
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {

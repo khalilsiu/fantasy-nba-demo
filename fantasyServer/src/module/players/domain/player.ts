@@ -3,6 +3,7 @@ import { Type } from 'class-transformer';
 import {
   IsBoolean,
   IsNumber,
+  IsOptional,
   IsString,
   Length,
   validate,
@@ -12,10 +13,10 @@ import { Result } from 'src/shared/core/Result';
 
 class Birth {
   @Length(2, 255)
-  date: string;
+  date?: string;
 
   @Length(2, 255)
-  country: string;
+  country?: string;
 }
 
 class Nba {
@@ -27,40 +28,42 @@ class Nba {
 }
 
 class Height {
+  @IsOptional()
   @Length(2, 255)
-  country: string;
+  feets?: string;
 
+  @IsOptional()
   @Length(2, 255)
-  feets: string;
+  inches?: string;
 
+  @IsOptional()
   @Length(2, 255)
-  inches: string;
-
-  @Length(2, 255)
-  meters: string;
+  meters?: string;
 }
 
 class Weight {
   @Length(2, 255)
-  pounds: string;
+  @IsOptional()
+  pounds?: string;
 
   @Length(2, 255)
-  kilograms: string;
+  @IsOptional()
+  kilograms?: string;
 }
 
 export interface PlayerProps {
   id: number;
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   birth: Birth;
   nba: Nba;
   height: Height;
   weight: Weight;
   college: string;
   affiliation: string;
-  jersey: number;
-  active: boolean;
-  pos: string;
+  jersey?: number;
+  active?: boolean;
+  pos?: string;
 }
 
 export class Player {
@@ -69,11 +72,11 @@ export class Player {
 
   @IsString()
   @Length(2, 255)
-  readonly firstname: string;
+  readonly firstName: string;
 
   @IsString()
   @Length(2, 255)
-  readonly lastname: string;
+  readonly lastName: string;
 
   @ValidateNested({ each: true })
   @Type(() => Birth)
@@ -100,20 +103,23 @@ export class Player {
   readonly affiliation: string;
 
   @IsNumber()
+  @IsOptional()
   readonly jersey: number;
 
   @IsBoolean()
+  @IsOptional()
   readonly active: boolean;
 
   @IsString()
+  @IsOptional()
   @Length(1, 10)
   readonly pos: string;
 
   static readonly logger = new Logger(Player.name);
   constructor({
     id,
-    firstname,
-    lastname,
+    firstName,
+    lastName,
     birth,
     nba,
     height,
@@ -125,8 +131,8 @@ export class Player {
     pos,
   }: PlayerProps) {
     this.id = id;
-    this.firstname = firstname;
-    this.lastname = lastname;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.birth = birth;
     this.nba = nba;
     this.height = height;
