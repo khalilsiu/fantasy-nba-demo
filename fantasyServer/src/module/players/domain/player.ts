@@ -11,7 +11,7 @@ import {
 } from 'class-validator';
 import { Result } from 'src/shared/core/Result';
 
-class Birth {
+export class Birth {
   @Length(2, 255)
   date?: string;
 
@@ -19,7 +19,7 @@ class Birth {
   country?: string;
 }
 
-class Nba {
+export class Nba {
   @IsNumber()
   start: number;
 
@@ -27,7 +27,7 @@ class Nba {
   pro: number;
 }
 
-class Height {
+export class Height {
   @IsOptional()
   @Length(2, 255)
   feets?: string;
@@ -41,7 +41,7 @@ class Height {
   meters?: string;
 }
 
-class Weight {
+export class Weight {
   @Length(2, 255)
   @IsOptional()
   pounds?: string;
@@ -52,7 +52,7 @@ class Weight {
 }
 
 export interface PlayerProps {
-  id: number;
+  playerId: number;
   firstName: string;
   lastName: string;
   birth: Birth;
@@ -68,7 +68,7 @@ export interface PlayerProps {
 
 export class Player {
   @IsNumber()
-  readonly id: number;
+  readonly playerId: number;
 
   @IsString()
   @Length(2, 255)
@@ -117,7 +117,7 @@ export class Player {
 
   static readonly logger = new Logger(Player.name);
   constructor({
-    id,
+    playerId,
     firstName,
     lastName,
     birth,
@@ -130,7 +130,7 @@ export class Player {
     active,
     pos,
   }: PlayerProps) {
-    this.id = id;
+    this.playerId = playerId;
     this.firstName = firstName;
     this.lastName = lastName;
     this.birth = birth;
@@ -145,12 +145,11 @@ export class Player {
   }
 
   public static async create(props: PlayerProps): Promise<Result<Player>> {
-    this.logger.log(`create PlayerProps ${JSON.stringify(props)}`);
+    this.logger.log(`create player`);
 
     const player = new Player(props);
-    this.logger.log(`created Player`);
-
     const errors = await validate(Player);
+    this.logger.log(`validated player`);
 
     if (errors.length > 0) {
       return Result.fail<Player>(Object.values(errors[0].constraints)[0]);

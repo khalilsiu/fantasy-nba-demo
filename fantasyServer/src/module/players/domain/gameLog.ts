@@ -1,27 +1,16 @@
 import { Logger } from '@nestjs/common';
-import { Type } from 'class-transformer';
 import {
-  IsBoolean,
   IsNumber,
   IsOptional,
   IsString,
   Length,
   validate,
-  ValidateNested,
 } from 'class-validator';
 import { Result } from 'src/shared/core/Result';
 
-class Team {
-  id: number;
-  name: string;
-  nickname: string;
-  code: string;
-  logo: string;
-}
-
-export interface PlayerStatsProps {
+export interface GameLogProps {
   playerId: number;
-  team: Team;
+  teamId: number;
   gameId: number;
   points?: number;
   pos?: string;
@@ -47,13 +36,12 @@ export interface PlayerStatsProps {
   comment?: string;
 }
 
-export class PlayerStats {
+export class GameLog {
   @IsNumber()
   readonly playerId: number;
 
-  @ValidateNested({ each: true })
-  @Type(() => Team)
-  readonly team: Team;
+  @IsNumber()
+  readonly teamId: number;
 
   @IsNumber()
   readonly gameId: number;
@@ -151,10 +139,10 @@ export class PlayerStats {
   @IsOptional()
   readonly comment?: string;
 
-  static readonly logger = new Logger(PlayerStats.name);
+  static readonly logger = new Logger(GameLog.name);
   constructor({
     playerId,
-    team,
+    teamId,
     gameId,
     points,
     pos,
@@ -178,9 +166,9 @@ export class PlayerStats {
     blocks,
     plusMinus,
     comment,
-  }: PlayerStatsProps) {
+  }: GameLogProps) {
     this.playerId = playerId;
-    this.team = team;
+    this.teamId = teamId;
     this.gameId = gameId;
     this.points = points;
     this.pos = pos;
@@ -206,20 +194,17 @@ export class PlayerStats {
     this.comment = comment;
   }
 
-  public static async create(
-    props: PlayerStatsProps,
-  ): Promise<Result<PlayerStats>> {
-    this.logger.log(`create PlayerStatsProps ${JSON.stringify(props)}`);
+  public static async create(props: GameLogProps): Promise<Result<GameLog>> {
+    this.logger.log(`create gameLog`);
 
-    const player = new PlayerStats(props);
-    this.logger.log(`created PlayerStats`);
-
-    const errors = await validate(PlayerStats);
+    const gameLog = new GameLog(props);
+    const errors = await validate(gameLog);
+    this.logger.log(`validated create gameLog`);
 
     if (errors.length > 0) {
-      return Result.fail<PlayerStats>(Object.values(errors[0].constraints)[0]);
+      return Result.fail<GameLog>(Object.values(errors[0].constraints)[0]);
     }
 
-    return Result.ok<PlayerStats>(player);
+    return Result.ok<GameLog>(gameLog);
   }
 }

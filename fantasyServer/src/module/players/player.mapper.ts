@@ -1,12 +1,6 @@
-export interface PlayerStatsData {
+export interface GameLogData {
   playerId: number;
-  team: {
-    id: number;
-    name: string;
-    nickname: string;
-    code: string;
-    logo: string;
-  };
+  teamId: number;
   gameId: number;
   points?: number;
   pos?: string;
@@ -33,7 +27,7 @@ export interface PlayerStatsData {
 }
 
 export interface PlayerData {
-  id: number;
+  playerId: number;
   firstName: string;
   lastName: string;
   birth: {
@@ -75,7 +69,7 @@ export default class PlayerMapper {
   }): PlayerData {
     const { standard } = leagues;
     return {
-      id,
+      playerId: id,
       firstName: firstname,
       lastName: lastname,
       birth,
@@ -90,7 +84,7 @@ export default class PlayerMapper {
     };
   }
 
-  static mapPlayerStatsFromOracle({
+  static mapGameLogFromOracle({
     player,
     team,
     game,
@@ -116,10 +110,10 @@ export default class PlayerMapper {
     blocks,
     plusMinus,
     comment,
-  }): PlayerStatsData {
+  }): GameLogData {
     return {
       playerId: player.id,
-      team,
+      teamId: team.id,
       gameId: game.id,
       points,
       pos,

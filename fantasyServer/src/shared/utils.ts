@@ -34,3 +34,20 @@ export const snakeize = (obj: any) =>
 export const sleep = (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
+
+export const throttlePromises = async <T>(inputPromises: Promise<T>[]) => {
+  let tempPromises = [];
+  const results = [];
+  for (let i = 0; i < inputPromises.length; i++) {
+    if (i % 2 === 0) {
+      const result = await Promise.all(tempPromises);
+      results.push(...result);
+      tempPromises = [];
+      sleep(200);
+      console.log('sleep 200ms');
+    } else {
+      tempPromises.push(inputPromises[i]);
+    }
+  }
+  return results;
+};
