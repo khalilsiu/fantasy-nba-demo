@@ -51,12 +51,10 @@ export class GameLog {
   readonly points?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly pos?: string;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly min?: string;
 
@@ -69,7 +67,6 @@ export class GameLog {
   readonly fga?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly fgp?: string;
 
@@ -82,7 +79,6 @@ export class GameLog {
   readonly fta?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly ftp?: string;
 
@@ -95,7 +91,6 @@ export class GameLog {
   readonly tpa?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly tpp?: string;
 
@@ -130,12 +125,10 @@ export class GameLog {
   readonly blocks?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly plusMinus?: string;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly comment?: string;
 
@@ -195,7 +188,7 @@ export class GameLog {
   }
 
   public static async create(props: GameLogProps): Promise<Result<GameLog>> {
-    this.logger.log(`create gameLog`);
+    this.logger.log(`create gameLog props ${JSON.stringify(props)}`);
 
     const gameLog = new GameLog(props);
     const errors = await validate(gameLog);

@@ -5,17 +5,16 @@ import {
   IsNumber,
   IsOptional,
   IsString,
-  Length,
   validate,
   ValidateNested,
 } from 'class-validator';
 import { Result } from 'src/shared/core/Result';
 
 export class Birth {
-  @Length(2, 255)
+  @IsString()
   date?: string;
 
-  @Length(2, 255)
+  @IsString()
   country?: string;
 }
 
@@ -29,24 +28,24 @@ export class Nba {
 
 export class Height {
   @IsOptional()
-  @Length(2, 255)
+  @IsString()
   feets?: string;
 
   @IsOptional()
-  @Length(2, 255)
+  @IsString()
   inches?: string;
 
   @IsOptional()
-  @Length(2, 255)
+  @IsString()
   meters?: string;
 }
 
 export class Weight {
-  @Length(2, 255)
+  @IsString()
   @IsOptional()
   pounds?: string;
 
-  @Length(2, 255)
+  @IsString()
   @IsOptional()
   kilograms?: string;
 }
@@ -71,11 +70,9 @@ export class Player {
   readonly playerId: number;
 
   @IsString()
-  @Length(2, 255)
   readonly firstName: string;
 
   @IsString()
-  @Length(2, 255)
   readonly lastName: string;
 
   @ValidateNested({ each: true })
@@ -95,11 +92,9 @@ export class Player {
   readonly weight: Weight;
 
   @IsString()
-  @Length(2, 255)
   readonly college: string;
 
   @IsString()
-  @Length(2, 255)
   readonly affiliation: string;
 
   @IsNumber()
@@ -112,7 +107,6 @@ export class Player {
 
   @IsString()
   @IsOptional()
-  @Length(1, 10)
   readonly pos: string;
 
   static readonly logger = new Logger(Player.name);

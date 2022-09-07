@@ -9,12 +9,17 @@ import { GameLogSchema } from './repos/implementations/mongo/schemas/gameLog.sch
 import { PLAYER_REPO } from './repos/player.repo';
 import { GAME_LOG_REPO } from './repos/gameLog.repo';
 import { FetchPlayersAndGameLogsUseCase } from './useCases/fetchPlayersAndGameLogs/fetchPlayersAndGameLogsUseCase';
+import { Game } from './domain/game';
+import { GAME_REPO } from './repos/game.repo';
+import { MongoGameRepo } from './repos/implementations/mongo/game.mongorepo';
+import { GameSchema } from './repos/implementations/mongo/schemas/game.schema';
 
 @Module({
   imports: [
     MongooseModule.forFeature([
       { name: Player.name, schema: PlayerSchema },
       { name: GameLog.name, schema: GameLogSchema },
+      { name: Game.name, schema: GameSchema },
     ]),
   ],
   controllers: [],
@@ -27,6 +32,10 @@ import { FetchPlayersAndGameLogsUseCase } from './useCases/fetchPlayersAndGameLo
     {
       provide: GAME_LOG_REPO,
       useClass: MongoGameLogRepo,
+    },
+    {
+      provide: GAME_REPO,
+      useClass: MongoGameRepo,
     },
   ],
 })

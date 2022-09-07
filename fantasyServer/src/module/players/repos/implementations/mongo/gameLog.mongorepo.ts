@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { GameLogMapper } from 'src/module/players/gameLog.mapper';
 import { GameLog } from '../../../domain/gameLog';
 import { GameLogRepo } from '../../gameLog.repo';
 import { GameLogDocument } from './schemas/gameLog.schema';
@@ -33,9 +34,11 @@ export class MongoGameLogRepo implements GameLogRepo {
     this.logger.log(`bulkUpsertGameLog successful`);
   }
 
-  // async getGameLogsByPlayerId(playerId: number): Promise<GameLog[]> {
-  //   this.logger.log(`getGameLogsByPlayerId playerId ${playerId}`);
-  //   const gameLogs = await this.gameLogModel.find({ playerId });
-  //   return
-  // }
+  async getGameLogsByPlayerId(playerId: number): Promise<GameLog[]> {
+    this.logger.log(`getGameLogsByPlayerId playerId ${playerId}`);
+    const gameLogs = await this.gameLogModel.find({ playerId });
+    return Promise.all(
+      gameLogs.map((gameLog) => GameLogMapper.mapGameLogToDomain(gameLog)),
+    );
+  }
 }

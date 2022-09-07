@@ -21,16 +21,16 @@ export class AggregateStatsUseCase {
     @Inject(GAME_LOG_REPO) private gameLogRepo: GameLogRepo,
   ) {}
 
-  @Cron('10 * * * * *')
+  // @Cron('10 * * * * *')
   public async exec(): Promise<Response> {
     try {
       this.logger.log(`AggregateStatsUseCase`);
 
-      // const playerIds = await this.playerRepo.getPlayerIds();
+      const playerIds = await this.playerRepo.getPlayerIds();
 
-      // for (const playerId of playerIds) {
-      //   const gameLogs = await this.gameLogs
-      // }
+      for (const playerId of playerIds) {
+        // const gameLogs = await this.gameLogRepo.getGameLogsByPlayerId(playerId);
+      }
 
       return right(Result.ok<any>());
     } catch (err) {

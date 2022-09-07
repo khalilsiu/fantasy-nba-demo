@@ -35,19 +35,19 @@ export const sleep = (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-export const throttlePromises = async <T>(inputPromises: Promise<T>[]) => {
-  let tempPromises = [];
-  const results = [];
-  for (let i = 0; i < inputPromises.length; i++) {
-    if (i % 2 === 0) {
-      const result = await Promise.all(tempPromises);
-      results.push(...result);
-      tempPromises = [];
-      sleep(200);
-      console.log('sleep 200ms');
-    } else {
-      tempPromises.push(inputPromises[i]);
-    }
+export const throttlePromises = async <T>(
+  inputPromise: Promise<T>,
+  index: number,
+  length: number,
+  outputPromises: Promise<T>[],
+) => {
+  outputPromises.push(inputPromise);
+  if (index % 10 === 0 || index === length - 1) {
+    const result = await Promise.all(outputPromises);
+    console.log('sleep for 200ms');
+    await sleep(200);
+
+    return { result, outputPromises: [] };
   }
-  return results;
+  return { result: [], outputPromises };
 };

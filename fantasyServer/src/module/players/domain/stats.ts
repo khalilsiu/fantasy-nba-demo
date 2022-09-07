@@ -18,12 +18,10 @@ export class AggregatedStats {
   readonly points?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly pos?: string;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly min?: string;
 
@@ -36,7 +34,6 @@ export class AggregatedStats {
   readonly fga?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly fgp?: string;
 
@@ -49,7 +46,6 @@ export class AggregatedStats {
   readonly fta?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly ftp?: string;
 
@@ -62,7 +58,6 @@ export class AggregatedStats {
   readonly tpa?: number;
 
   @IsString()
-  @Length(2, 255)
   @IsOptional()
   readonly tpp?: string;
 

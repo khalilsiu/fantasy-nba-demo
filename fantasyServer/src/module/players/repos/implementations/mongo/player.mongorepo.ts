@@ -34,6 +34,6 @@ export class MongoPlayerRepo implements PlayerRepo {
   async getPlayerIds(): Promise<number[]> {
     this.logger.log(`getPlayerIds`);
     const players = await this.playerModel.find({}, { playerId: 1 });
-    return players.map((player) => player.player_id);
+    return players.map((player) => player.playerId);
   }
 }
