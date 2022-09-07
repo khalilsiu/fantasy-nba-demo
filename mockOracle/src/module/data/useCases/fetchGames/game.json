@@ -1,0 +1,84 @@
+{
+    "id": 8137,
+    "league": "standard",
+    "season": 2020,
+    "date": {
+        "start": "2020-12-12T03:30:00.000Z",
+        "end": "2020-12-12T05:58:00.000Z",
+        "duration": "2:17"
+    },
+    "stage": 1,
+    "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+    },
+    "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+    },
+    "arena": {
+        "name": "Moda Center",
+        "city": "Portland",
+        "state": "OR",
+        "country": "USA"
+    },
+    "teams": {
+        "visitors": {
+            "id": 30,
+            "name": "Sacramento Kings",
+            "nickname": "Kings",
+            "code": "SAC",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/1200px-Kings_de_Sacramento_logo.svg.png"
+        },
+        "home": {
+            "id": 29,
+            "name": "Portland Trail Blazers",
+            "nickname": "Trail Blazers",
+            "code": "POR",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+        }
+    },
+    "scores": {
+        "visitors": {
+            "win": 0,
+            "loss": 1,
+            "series": {
+                "win": 0,
+                "loss": 1
+            },
+            "linescore": [
+                "36",
+                "26",
+                "19",
+                "21"
+            ],
+            "points": 102
+        },
+        "home": {
+            "win": 1,
+            "loss": 0,
+            "series": {
+                "win": 1,
+                "loss": 0
+            },
+            "linescore": [
+                "41",
+                "31",
+                "24",
+                "31"
+            ],
+            "points": 127
+        }
+    },
+    "officials": [
+        "Bill Spooner",
+        "Kevin Cutler",
+        "J.T. Orr"
+    ],
+    "timesTied": null,
+    "leadChanges": null,
+    "nugget": null
+}

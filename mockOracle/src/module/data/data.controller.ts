@@ -6,6 +6,8 @@ import {
   Logger,
   Query,
 } from '@nestjs/common';
+import { FetchGamesDTO } from './useCases/fetchGames/fetchGamesDTO';
+import { FetchGamesUseCase } from './useCases/fetchGames/fetchGamesUseCase';
 import { FetchPlayersDTO } from './useCases/fetchPlayers/fetchPlayersDTO';
 import { FetchPlayersUseCase } from './useCases/fetchPlayers/fetchPlayersUseCase';
 import { FetchPlayerStatsDTO } from './useCases/fetchPlayerStats/fetchPlayerStatsDTO';
@@ -17,6 +19,7 @@ export class DataController {
   constructor(
     private fetchPlayersUseCase: FetchPlayersUseCase,
     private fetchPlayerStatsUseCase: FetchPlayerStatsUseCase,
+    private fetchGamesUseCase: FetchGamesUseCase,
   ) {}
 
   @Get('/players')
@@ -57,6 +60,34 @@ export class DataController {
     if (result.isLeft()) {
       const error = result.value;
       this.logger.error(`getPlayerStats error ${JSON.stringify(error)}`);
+      switch (error.constructor.name) {
+        case 'NotFoundError': {
+          throw new HttpException(
+            error.errorValue().message,
+            HttpStatus.NOT_FOUND,
+          );
+        }
+        default:
+          throw new HttpException(
+            error.errorValue().message,
+            HttpStatus.INTERNAL_SERVER_ERROR,
+          );
+      }
+    }
+    // exception is being thrown if not found
+    return result.value.getValue();
+  }
+
+  @Get('/games')
+  async getGames(@Query() query: FetchGamesDTO) {
+    const { id, date } = query;
+    this.logger.log(`[POST] getGames`);
+    const result = await this.fetchGamesUseCase.exec(id, date);
+    this.logger.log(`getGames done`);
+
+    if (result.isLeft()) {
+      const error = result.value;
+      this.logger.error(`getGames error ${JSON.stringify(error)}`);
       switch (error.constructor.name) {
         case 'NotFoundError': {
           throw new HttpException(
