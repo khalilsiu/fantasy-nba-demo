@@ -5,7 +5,6 @@ import {
   IsObject,
   IsOptional,
   IsString,
-  Length,
   validate,
   ValidateNested,
 } from 'class-validator';
@@ -17,14 +16,6 @@ export class AggregatedStats {
   @IsOptional()
   readonly points?: number;
 
-  @IsString()
-  @IsOptional()
-  readonly pos?: string;
-
-  @IsString()
-  @IsOptional()
-  readonly min?: string;
-
   @IsNumber()
   @IsOptional()
   readonly fgm?: number;
@@ -33,9 +24,9 @@ export class AggregatedStats {
   @IsOptional()
   readonly fga?: number;
 
-  @IsString()
+  @IsNumber()
   @IsOptional()
-  readonly fgp?: string;
+  readonly fgp?: number;
 
   @IsNumber()
   @IsOptional()
@@ -45,9 +36,9 @@ export class AggregatedStats {
   @IsOptional()
   readonly fta?: number;
 
-  @IsString()
+  @IsNumber()
   @IsOptional()
-  readonly ftp?: string;
+  readonly ftp?: number;
 
   @IsNumber()
   @IsOptional()
@@ -57,9 +48,9 @@ export class AggregatedStats {
   @IsOptional()
   readonly tpa?: number;
 
-  @IsString()
+  @IsNumber()
   @IsOptional()
-  readonly tpp?: string;
+  readonly tpp?: number;
 
   @IsNumber()
   @IsOptional()
@@ -88,6 +79,7 @@ export class AggregatedStats {
   @IsNumber()
   @IsOptional()
   readonly turnovers?: number;
+
   @IsOptional()
   readonly blocks?: number;
 }
@@ -100,8 +92,8 @@ export interface StatsProps {
   last14DaysTot: AggregatedStats;
   last30DaysAvg: AggregatedStats;
   last30DaysTot: AggregatedStats;
-  seasonAvg: AggregatedStats;
-  seasonTot: AggregatedStats;
+  thisSeasonAvg: AggregatedStats;
+  thisSeasonTot: AggregatedStats;
   lastSeasonAvg: AggregatedStats;
   lastSeasonTot: AggregatedStats;
 }
@@ -150,13 +142,13 @@ export class Stats {
   @Type(() => AggregatedStats)
   @IsObject()
   @IsNotEmptyObject()
-  seasonAvg: AggregatedStats;
+  thisSeasonAvg: AggregatedStats;
 
   @ValidateNested()
   @Type(() => AggregatedStats)
   @IsObject()
   @IsNotEmptyObject()
-  seasonTot: AggregatedStats;
+  thisSeasonTot: AggregatedStats;
 
   @ValidateNested()
   @Type(() => AggregatedStats)
@@ -179,8 +171,8 @@ export class Stats {
     last14DaysTot,
     last30DaysAvg,
     last30DaysTot,
-    seasonAvg,
-    seasonTot,
+    thisSeasonAvg,
+    thisSeasonTot,
     lastSeasonAvg,
     lastSeasonTot,
   }: StatsProps) {
@@ -191,8 +183,8 @@ export class Stats {
     this.last14DaysTot = last14DaysTot;
     this.last30DaysAvg = last30DaysAvg;
     this.last30DaysTot = last30DaysTot;
-    this.seasonAvg = seasonAvg;
-    this.seasonTot = seasonTot;
+    this.thisSeasonAvg = thisSeasonAvg;
+    this.thisSeasonTot = thisSeasonTot;
     this.lastSeasonAvg = lastSeasonAvg;
     this.lastSeasonTot = lastSeasonTot;
   }

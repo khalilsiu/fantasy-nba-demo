@@ -40,12 +40,12 @@ export const throttlePromises = async <T>(
   index: number,
   length: number,
   outputPromises: Promise<T>[],
-) => {
+): Promise<{ result: T[]; outputPromises: Promise<T>[] }> => {
   outputPromises.push(inputPromise);
-  if (index % 10 === 0 || index === length - 1) {
+  if (index % 5 === 0 || index === length - 1) {
     const result = await Promise.all(outputPromises);
-    console.log('sleep for 200ms');
-    await sleep(200);
+    console.log('sleep for 1000ms');
+    await sleep(1000);
 
     return { result, outputPromises: [] };
   }

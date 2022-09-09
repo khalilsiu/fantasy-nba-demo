@@ -20,7 +20,7 @@ export class OracleService {
     const gameLogResponse = await res.json();
     const { response } = gameLogResponse;
     if (!res.ok || !response) {
-      this.logger.log(`fetchGameLog response not ok`);
+      this.logger.log(`fetchGameLog response not ok endpoint: ${endpoint}`);
       throw new Error(res.statusText + endpoint);
     }
     this.logger.log(`fetchGameLog success`);
@@ -36,7 +36,7 @@ export class OracleService {
     const playerResponse = await res.json();
     const { response } = playerResponse;
     if (!res.ok || !response) {
-      this.logger.log(`fetchTeam response not ok`);
+      this.logger.log(`fetchTeam response not ok endpoint: ${endpoint}`);
       throw new Error(res.statusText);
     }
     this.logger.log(`fetchTeam success`);
@@ -49,8 +49,9 @@ export class OracleService {
     const res = await fetch(endpoint);
     const gameResponse = await res.json();
     const { response } = gameResponse;
-    if (!res.ok || !response) {
-      this.logger.log(`fetchGameById response not ok`);
+    console.log({ ok: res.ok });
+    if (!response) {
+      this.logger.log(`fetchGameById response not ok endpoint: ${endpoint}`);
       throw new Error(res.statusText);
     }
     if (!response.length) {

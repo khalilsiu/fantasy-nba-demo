@@ -13,6 +13,11 @@ import { Game } from './domain/game';
 import { GAME_REPO } from './repos/game.repo';
 import { MongoGameRepo } from './repos/implementations/mongo/game.mongorepo';
 import { GameSchema } from './repos/implementations/mongo/schemas/game.schema';
+import { AggregateStatsUseCase } from './useCases/aggregateStats/aggregateStats';
+import { StatsSchema } from './repos/implementations/mongo/schemas/stats.schema';
+import { Stats } from './domain/stats';
+import { MongoStatsRepo } from './repos/implementations/mongo/stats.mongorepo';
+import { STATS_REPO } from './repos/stats.repo';
 
 @Module({
   imports: [
@@ -20,11 +25,13 @@ import { GameSchema } from './repos/implementations/mongo/schemas/game.schema';
       { name: Player.name, schema: PlayerSchema },
       { name: GameLog.name, schema: GameLogSchema },
       { name: Game.name, schema: GameSchema },
+      { name: Stats.name, schema: StatsSchema },
     ]),
   ],
   controllers: [],
   providers: [
     FetchPlayersAndGameLogsUseCase,
+    AggregateStatsUseCase,
     {
       provide: PLAYER_REPO,
       useClass: MongoPlayerRepo,
@@ -36,6 +43,10 @@ import { GameSchema } from './repos/implementations/mongo/schemas/game.schema';
     {
       provide: GAME_REPO,
       useClass: MongoGameRepo,
+    },
+    {
+      provide: STATS_REPO,
+      useClass: MongoStatsRepo,
     },
   ],
 })

@@ -50,13 +50,13 @@ export class Stats {
     type: Object,
     required: true,
   })
-  seasonAvg: AggregatedStats;
+  thisSeasonAvg: AggregatedStats;
 
   @Prop({
     type: Object,
     required: true,
   })
-  seasonTot: AggregatedStats;
+  thisSeasonTot: AggregatedStats;
 
   @Prop({
     type: Object,

@@ -4,7 +4,6 @@ import UnexpectedError, {
 } from 'src/shared/core/AppError';
 import { Either, Result, right, left } from 'src/shared/core/Result';
 import { OracleService } from 'src/module/oracle/OracleService';
-import { Cron } from '@nestjs/schedule';
 import { PlayerData } from '../../player.mapper';
 import { Player } from '../../domain/player';
 import { GameLog } from '../../domain/gameLog';
@@ -20,8 +19,8 @@ type Response = Either<
   DomainModelCreationError | UnexpectedError,
   Result<void>
 >;
-const years = [2021];
-const teamIds = [1];
+const years = [2021, 2020];
+const teamIds = [1, 2];
 @Injectable()
 export class FetchPlayersAndGameLogsUseCase {
   private readonly logger = new Logger(FetchPlayersAndGameLogsUseCase.name);
@@ -31,7 +30,7 @@ export class FetchPlayersAndGameLogsUseCase {
     @Inject(GAME_LOG_REPO) private gameLogRepo: GameLogRepo,
     @Inject(GAME_REPO) private gameRepo: GameRepo,
   ) {
-    this.exec();
+    // this.exec();
   }
 
   public async exec(): Promise<Response> {
@@ -54,50 +53,53 @@ export class FetchPlayersAndGameLogsUseCase {
           playerDomainObjects.push(teamOrError.getValue());
         }
       }
-
       this.logger.log(`before saving players`);
       await this.playerRepo.bulkUpsertPlayers(playerDomainObjects);
       this.logger.log(`after saving players`);
 
-      const playerGameLogs: GameLogData[][] = [];
       let gameLogPromises = [];
+      const gameLogDomainObjects: GameLog[] = [];
       for (const year of years) {
         for (const players of teams) {
           for (let i = 0; i < players.length; i++) {
-            const { result, outputPromises: promises } = await throttlePromises(
-              OracleService.fetchGameLog(players[i].playerId, year),
-              i,
-              players.length,
-              gameLogPromises,
-            );
+            const { result: playersGameLogs, outputPromises: promises } =
+              await throttlePromises(
+                OracleService.fetchGameLog(players[i].playerId, year),
+                i,
+                players.length,
+                gameLogPromises,
+              );
+            if (playersGameLogs.length) {
+              const tempGameLogDomainObjects: GameLog[] = [];
+              for (const gameLogs of playersGameLogs) {
+                for (const gameLog of gameLogs) {
+                  const gameLogOrError = await GameLog.create(gameLog);
+                  if (gameLogOrError.isFailure) {
+                    throw new DomainModelCreationError(
+                      gameLogOrError.error.toString(),
+                    );
+                  }
+                  tempGameLogDomainObjects.push(gameLogOrError.getValue());
+                  gameLogDomainObjects.push(gameLogOrError.getValue());
+                }
+              }
+              this.logger.log(`before saving gameLogs`);
+              await this.gameLogRepo.bulkUpsertGameLog(gameLogDomainObjects);
+              this.logger.log(`after saving gameLogs`);
+            }
             gameLogPromises = promises;
-            playerGameLogs.push(...result);
           }
         }
       }
-
-      this.logger.log(`fetched playerGameLogs length ${playerGameLogs.length}`);
-
-      const gameLogDomainObjects: GameLog[] = [];
-      for (const gameLogs of playerGameLogs) {
-        for (const gameLog of gameLogs) {
-          const gameLogOrError = await GameLog.create(gameLog);
-          if (gameLogOrError.isFailure) {
-            throw new DomainModelCreationError(gameLogOrError.error.toString());
-          }
-          gameLogDomainObjects.push(gameLogOrError.getValue());
-        }
-      }
-      this.logger.log(`before saving gameLogs`);
-      await this.gameLogRepo.bulkUpsertGameLog(gameLogDomainObjects);
-      this.logger.log(`after saving gameLogs`);
 
       let gamePromises = [];
-      const games: GameData[] = [];
-      const fetchedGameIds = [];
 
       for (let i = 0; i < gameLogDomainObjects.length; i++) {
-        if (fetchedGameIds.includes(gameLogDomainObjects[i].gameId)) {
+        const game = await this.gameRepo.findGameByGameId(
+          gameLogDomainObjects[i].gameId,
+        );
+        if (game) {
+          this.logger.log(`gameId ${game.gameId} exists`);
           continue;
         }
         const { result, outputPromises } = await throttlePromises(
@@ -106,23 +108,21 @@ export class FetchPlayersAndGameLogsUseCase {
           gameLogDomainObjects.length,
           gamePromises,
         );
-        gamePromises = outputPromises;
-        games.push(...result);
-        fetchedGameIds.push(gameLogDomainObjects[i].gameId);
-      }
-
-      const gameDomainObjects: Game[] = [];
-      for (const game of games) {
-        const gameOrError = await Game.create(game);
-        if (gameOrError.isFailure) {
-          throw new DomainModelCreationError(gameOrError.error.toString());
+        if (result.length) {
+          const tempGameDomainObjects = [];
+          for (const game of result) {
+            const gameOrError = await Game.create(game);
+            if (gameOrError.isFailure) {
+              throw new DomainModelCreationError(gameOrError.error.toString());
+            }
+            tempGameDomainObjects.push(gameOrError.getValue());
+          }
+          this.logger.log(`before saving game`);
+          await this.gameRepo.bulkUpsertGame(tempGameDomainObjects);
+          this.logger.log(`after saving game`);
         }
-        gameDomainObjects.push(gameOrError.getValue());
+        gamePromises = outputPromises;
       }
-
-      this.logger.log(`before saving game`);
-      await this.gameRepo.bulkUpsertGame(gameDomainObjects);
-      this.logger.log(`after saving game`);
 
       return right(Result.ok<any>());
     } catch (err) {

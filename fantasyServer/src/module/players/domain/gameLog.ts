@@ -1,4 +1,5 @@
 import { Logger } from '@nestjs/common';
+import { Type } from 'class-transformer';
 import {
   IsNumber,
   IsOptional,
@@ -38,6 +39,7 @@ export interface GameLogProps {
 
 export class GameLog {
   @IsNumber()
+  @Type(() => Number)
   readonly playerId: number;
 
   @IsNumber()

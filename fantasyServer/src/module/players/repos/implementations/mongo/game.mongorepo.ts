@@ -34,7 +34,7 @@ export class MongoGameRepo implements GameRepo {
     this.logger.log(`bulkUpsertGame successful`);
   }
 
-  async getGameByGameId(gameId: number): Promise<Game | null> {
+  async findGameByGameId(gameId: number): Promise<Game | null> {
     this.logger.log(`getGamesByGameId playerId ${gameId}`);
     const game = await this.gameModel.findOne({ gameId });
     if (!game) {
