@@ -2,7 +2,7 @@ import { BadRequestException } from '@nestjs/common';
 import { ArgumentMetadata, Injectable, PipeTransform } from '@nestjs/common';
 import { plainToClass } from 'class-transformer';
 import { validate } from 'class-validator';
-import { camelize } from './utils';
+// import { camelize } from './utils';
 
 @Injectable()
 export class ValidationPipe implements PipeTransform {
@@ -11,8 +11,7 @@ export class ValidationPipe implements PipeTransform {
       return value;
     }
     // incoming validations are being transformed to camelcase
-    const camelized = camelize(value);
-    const object = plainToClass(metatype, camelized);
+    const object = plainToClass(metatype, value);
     const errors = await validate(object, {
       whitelist: true,
       forbidNonWhitelisted: true,

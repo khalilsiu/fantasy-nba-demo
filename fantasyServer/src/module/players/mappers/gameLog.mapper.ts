@@ -1,5 +1,5 @@
 import { DomainModelCreationError } from 'src/shared/core/AppError';
-import { GameLog } from './domain/gameLog';
+import { GameLog } from '../domain/gameLog';
 
 export interface GameLogData {
   playerId: number;

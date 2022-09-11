@@ -39,7 +39,7 @@ export class AggregateStatsUseCase {
     this.thirtyDaysAgo = subDays(new Date(), 30);
     this.thisSeasonStarts = new Date(SEASON_START_2021);
     this.lastSeasonStarts = new Date(SEASON_START_2020);
-    this.exec();
+    // this.exec();
   }
 
   private aggregateStats(stats: GameLogWithDate[], mode: 'total' | 'average') {

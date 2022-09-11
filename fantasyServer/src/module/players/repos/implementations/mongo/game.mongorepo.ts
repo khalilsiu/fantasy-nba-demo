@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { GameMapper } from 'src/module/players/game.mapper';
+import { GameMapper } from 'src/module/players/mappers/game.mapper';
 import { Game } from '../../../domain/game';
 import { GameRepo } from '../../game.repo';
 import { GameDocument } from './schemas/game.schema';

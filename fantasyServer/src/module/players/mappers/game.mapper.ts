@@ -1,5 +1,5 @@
 import { DomainModelCreationError } from 'src/shared/core/AppError';
-import { Game } from './domain/game';
+import { Game } from '../domain/game';
 
 export interface TeamData {
   id: number;

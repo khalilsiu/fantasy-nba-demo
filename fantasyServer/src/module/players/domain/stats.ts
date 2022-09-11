@@ -4,7 +4,6 @@ import {
   IsNumber,
   IsObject,
   IsOptional,
-  IsString,
   validate,
   ValidateNested,
 } from 'class-validator';

@@ -1,8 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import fetch from 'cross-fetch';
-import { GameData, GameMapper } from '../players/game.mapper';
-import { GameLogData, GameLogMapper } from '../players/gameLog.mapper';
-import PlayerMapper, { PlayerData } from '../players/player.mapper';
+import { GameData, GameMapper } from '../players/mappers/game.mapper';
+import { GameLogData, GameLogMapper } from '../players/mappers/gameLog.mapper';
+import PlayerMapper, { PlayerData } from '../players/mappers/player.mapper';
 
 export const ORACLE_SERVICE = 'ORACLE SERVICE';
 const uri = process.env.MOCK_ORACLE_URL + '/data';

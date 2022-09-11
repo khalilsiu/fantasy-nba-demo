@@ -4,16 +4,14 @@ import UnexpectedError, {
 } from 'src/shared/core/AppError';
 import { Either, Result, right, left } from 'src/shared/core/Result';
 import { OracleService } from 'src/module/oracle/OracleService';
-import { PlayerData } from '../../player.mapper';
 import { Player } from '../../domain/player';
 import { GameLog } from '../../domain/gameLog';
 import { PLAYER_REPO, PlayerRepo } from '../../repos/player.repo';
 import { GAME_LOG_REPO, GameLogRepo } from '../../repos/gameLog.repo';
 import { throttlePromises } from 'src/shared/utils';
-import { GameLogData } from '../../gameLog.mapper';
 import { Game } from '../../domain/game';
 import { GameRepo, GAME_REPO } from '../../repos/game.repo';
-import { GameData } from '../../game.mapper';
+import { PlayerData } from '../../mappers/player.mapper';
 
 type Response = Either<
   DomainModelCreationError | UnexpectedError,

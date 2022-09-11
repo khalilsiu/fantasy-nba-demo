@@ -6,6 +6,7 @@ import {
   isArray,
   transform,
 } from 'lodash';
+import { Types } from 'mongoose';
 
 export const camelize = (obj: any) =>
   transform(obj, (acc, value, key, target) => {
@@ -50,4 +51,8 @@ export const throttlePromises = async <T>(
     return { result, outputPromises: [] };
   }
   return { result: [], outputPromises };
+};
+
+export const generateMongooseId = () => {
+  return Types.ObjectId().toHexString();
 };
