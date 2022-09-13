@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { LeagueMapper } from 'src/module/leagues/mappers/league.mapper';
+import { generateMongooseId } from 'src/shared/utils';
 import { League } from '../../../domain/league';
 import { LeagueRepo } from '../../league.repo';
 import { LeagueDocument } from './schemas/league.schema';
@@ -20,7 +21,7 @@ export class MongoLeagueRepo implements LeagueRepo {
     const ops = leagues.map(({ _id, ...rest }) => {
       return {
         updateOne: {
-          filter: { _id },
+          filter: { _id: generateMongooseId(_id) },
           update: {
             $set: rest,
           },

@@ -4,8 +4,9 @@ import UnexpectedError, {
   NotFoundError,
 } from 'src/shared/core/AppError';
 import { Either, Result, right, left } from 'src/shared/core/Result';
-import { League } from '../../domain/league';
+import { Team } from '../../domain/team';
 import { LEAGUE_REPO, LeagueRepo } from '../../repos/league.repo';
+import { TeamRepo, TEAM_REPO } from '../../repos/team.repo';
 import JoinLeagueDTO from './joinLeagueDTO';
 
 type Response = Either<
@@ -17,21 +18,45 @@ type Response = Either<
 export class JoinLeagueUseCase {
   private readonly logger = new Logger(JoinLeagueUseCase.name);
 
-  constructor(@Inject(LEAGUE_REPO) private leagueRepo: LeagueRepo) {}
+  constructor(
+    @Inject(LEAGUE_REPO) private leagueRepo: LeagueRepo,
+    @Inject(TEAM_REPO) private teamRepo: TeamRepo,
+  ) {}
 
-  public async exec(dto: JoinLeagueDTO): Promise<Response> {
+  public async exec({
+    leagueId,
+    walletAddress,
+    name,
+  }: JoinLeagueDTO): Promise<Response> {
     try {
       this.logger.log(`joinLeagueUseCase`);
 
-      const league = await this.leagueRepo.findLeagueById(dto.leagueId);
+      const league = await this.leagueRepo.findLeagueById(leagueId);
 
       if (!league) {
-        throw new NotFoundError(`leagueId ${league._id} is not Found`);
+        return left(new NotFoundError(`leagueId ${league._id} is not Found`));
       }
+
+      if (league.maxTeams === league.teamIds.length) {
+        return left(new DomainModelCreationError('Max team reached.'));
+      }
+
+      const teamOrError = await Team.create({
+        leagueId,
+        walletAddress,
+        name,
+        waiverRank: league.teamIds.length + 1,
+        createdAt: new Date(),
+      });
+
+      if (teamOrError.isFailure) {
+        return left(new DomainModelCreationError(teamOrError.error.toString()));
+      }
+
+      await this.teamRepo.bulkUpsertTeam([teamOrError.getValue()]);
 
       return right(Result.ok<any>());
     } catch (err) {
-      console.log(err);
       return left(new UnexpectedError(err));
     }
   }

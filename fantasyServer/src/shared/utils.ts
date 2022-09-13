@@ -53,6 +53,6 @@ export const throttlePromises = async <T>(
   return { result: [], outputPromises };
 };
 
-export const generateMongooseId = () => {
-  return Types.ObjectId().toHexString();
+export const generateMongooseId = (id?: string) => {
+  return Types.ObjectId(id).toHexString();
 };

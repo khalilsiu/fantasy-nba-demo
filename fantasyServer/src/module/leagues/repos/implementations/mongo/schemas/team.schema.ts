@@ -1,15 +1,27 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes, Types } from 'mongoose';
 
-export type LeagueDocument = League & Document;
+export type TeamDocument = Team & Document;
 
 @Schema()
-export class League {
+export class Team {
   @Prop({
     type: SchemaTypes.ObjectId,
     required: true,
   })
   _id: Types.ObjectId;
+
+  @Prop({
+    type: SchemaTypes.ObjectId,
+    required: true,
+  })
+  leagueId: Types.ObjectId;
+
+  @Prop({
+    type: String,
+    required: true,
+  })
+  walletAddress: string;
 
   @Prop({
     type: String,
@@ -21,37 +33,37 @@ export class League {
     type: Array,
     required: true,
   })
-  teamIds: number[];
-
-  @Prop({
-    type: Date,
-    required: true,
-  })
-  draftDateTime: Date;
+  roster: number[];
 
   @Prop({
     type: Number,
     required: true,
   })
-  maxTeams: number;
-
-  @Prop({
-    type: String,
-    required: true,
-  })
-  commissionerWalletAddress: string;
+  wins: number;
 
   @Prop({
     type: Number,
     required: true,
   })
-  commissionerFee: number;
+  losses: number;
 
   @Prop({
     type: Number,
     required: true,
   })
-  entryFee: number;
+  ties: number;
+
+  @Prop({
+    type: Number,
+    required: true,
+  })
+  moves: number;
+
+  @Prop({
+    type: Number,
+    required: true,
+  })
+  waiverRank: number;
 
   @Prop({
     type: Date,
@@ -65,5 +77,5 @@ export class League {
   deletedAt: Date;
 }
 
-export const LeagueSchema = SchemaFactory.createForClass(League);
-LeagueSchema.index({ commissionerWalletAddress: 1 });
+export const TeamSchema = SchemaFactory.createForClass(Team);
+TeamSchema.index({ leagueId: 1, walletAddress: 1 }, { unique: true });

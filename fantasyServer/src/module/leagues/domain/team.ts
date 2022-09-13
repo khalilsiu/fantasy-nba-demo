@@ -5,32 +5,37 @@ import {
   ValidateNested,
   IsString,
   IsArray,
+  IsDate,
+  IsOptional,
 } from 'class-validator';
 import { Result } from 'src/shared/core/Result';
 import { Type } from 'class-transformer';
 
 export interface TeamProps {
-  _id: string;
-  leagueId: number;
-  walletId: string;
+  _id?: string;
+  leagueId: string;
+  walletAddress: string;
   name: string;
-  roster: number[];
-  wins: number;
-  losses: number;
-  ties: number;
-  moves: number;
-  waiverRank: number;
+  roster?: number[];
+  wins?: number;
+  losses?: number;
+  ties?: number;
+  moves?: number;
+  waiverRank?: number;
+  createdAt: Date;
+  deletedAt?: Date;
 }
 
 export class Team {
   @IsString()
-  readonly _id: string;
-
-  @IsNumber()
-  readonly leagueId: number;
+  @IsOptional()
+  readonly _id?: string;
 
   @IsString()
-  readonly walletId: string;
+  readonly leagueId: string;
+
+  @IsString()
+  readonly walletAddress: string;
 
   @IsString()
   readonly name: string;
@@ -55,22 +60,31 @@ export class Team {
   @IsNumber()
   readonly waiverRank: number;
 
+  @IsDate()
+  readonly createdAt: Date;
+
+  @IsDate()
+  @IsOptional()
+  readonly deletedAt?: Date;
+
   static readonly logger = new Logger(Team.name);
   constructor({
     _id,
     leagueId,
-    walletId,
-    name,
-    roster,
+    walletAddress,
+    name = 'Your Dream Team',
+    roster = [],
     wins = 0,
     losses = 0,
     ties = 0,
     moves = 0,
     waiverRank,
-  }) {
+    createdAt,
+    deletedAt,
+  }: TeamProps) {
     this._id = _id;
     this.leagueId = leagueId;
-    this.walletId = walletId;
+    this.walletAddress = walletAddress;
     this.name = name;
     this.roster = roster;
     this.wins = wins;
@@ -78,13 +92,21 @@ export class Team {
     this.ties = ties;
     this.moves = moves;
     this.waiverRank = waiverRank;
+    this.createdAt = createdAt;
+    this.deletedAt = deletedAt;
   }
 
   public static async create(props: TeamProps): Promise<Result<Team>> {
     this.logger.log(`create team`);
+    let createdAt = props.createdAt;
 
-    const team = new Team(props);
+    if (!props.createdAt) {
+      createdAt = new Date();
+    }
+
+    const team = new Team({ ...props, createdAt });
     const errors = await validate(team);
+
     this.logger.log(`validated create team`);
 
     if (errors.length > 0) {

@@ -46,7 +46,9 @@ export class FetchPlayersAndGameLogsUseCase {
         for (const player of players) {
           const teamOrError = await Player.create(player);
           if (teamOrError.isFailure) {
-            throw new DomainModelCreationError(teamOrError.error.toString());
+            return left(
+              new DomainModelCreationError(teamOrError.error.toString()),
+            );
           }
           playerDomainObjects.push(teamOrError.getValue());
         }
@@ -73,8 +75,10 @@ export class FetchPlayersAndGameLogsUseCase {
                 for (const gameLog of gameLogs) {
                   const gameLogOrError = await GameLog.create(gameLog);
                   if (gameLogOrError.isFailure) {
-                    throw new DomainModelCreationError(
-                      gameLogOrError.error.toString(),
+                    return left(
+                      new DomainModelCreationError(
+                        gameLogOrError.error.toString(),
+                      ),
                     );
                   }
                   tempGameLogDomainObjects.push(gameLogOrError.getValue());
@@ -111,7 +115,9 @@ export class FetchPlayersAndGameLogsUseCase {
           for (const game of result) {
             const gameOrError = await Game.create(game);
             if (gameOrError.isFailure) {
-              throw new DomainModelCreationError(gameOrError.error.toString());
+              return left(
+                new DomainModelCreationError(gameOrError.error.toString()),
+              );
             }
             tempGameDomainObjects.push(gameOrError.getValue());
           }
@@ -124,7 +130,6 @@ export class FetchPlayersAndGameLogsUseCase {
 
       return right(Result.ok<any>());
     } catch (err) {
-      console.log(err);
       return left(new UnexpectedError(err));
     }
   }

@@ -14,7 +14,6 @@ import { Result } from 'src/shared/core/Result';
 import { Type } from 'class-transformer';
 import { SEASON_START_2022 } from 'src/shared/constants';
 import { subDays } from 'date-fns';
-import { generateMongooseId } from 'src/shared/utils';
 
 export interface LeagueProps {
   _id?: string;
@@ -22,7 +21,7 @@ export interface LeagueProps {
   teamIds?: number[];
   draftDateTime?: Date;
   maxTeams?: number;
-  commissionerWalletId: string;
+  commissionerWalletAddress: string;
   commissionerFee: number;
   entryFee: number;
   createdAt?: Date;
@@ -31,7 +30,8 @@ export interface LeagueProps {
 
 export class League {
   @IsString()
-  readonly _id: string;
+  @IsOptional()
+  readonly _id?: string;
 
   @IsString()
   readonly name: string;
@@ -50,7 +50,7 @@ export class League {
   readonly maxTeams: number;
 
   @IsString()
-  readonly commissionerWalletId: string;
+  readonly commissionerWalletAddress: string;
 
   @IsNumber()
   @Min(0)
@@ -74,7 +74,7 @@ export class League {
     teamIds = [],
     draftDateTime,
     maxTeams = 5,
-    commissionerWalletId,
+    commissionerWalletAddress,
     commissionerFee,
     entryFee,
     createdAt,
@@ -85,7 +85,7 @@ export class League {
     this.teamIds = teamIds;
     this.draftDateTime = draftDateTime;
     this.maxTeams = maxTeams;
-    this.commissionerWalletId = commissionerWalletId;
+    this.commissionerWalletAddress = commissionerWalletAddress;
     this.commissionerFee = commissionerFee;
     this.entryFee = entryFee;
     this.createdAt = createdAt;
@@ -94,13 +94,10 @@ export class League {
 
   public static async create(props: LeagueProps): Promise<Result<League>> {
     this.logger.log(`create league props ${JSON.stringify(props)}`);
-    const newUser = !props._id && !props.createdAt;
-    let _id = props._id;
     let createdAt = props.createdAt;
     let draftDateTime = props.draftDateTime;
 
-    if (newUser) {
-      _id = generateMongooseId();
+    if (!props.createdAt) {
       createdAt = new Date();
     }
 
@@ -110,7 +107,6 @@ export class League {
 
     const league = new League({
       ...props,
-      _id,
       draftDateTime,
       createdAt,
     });

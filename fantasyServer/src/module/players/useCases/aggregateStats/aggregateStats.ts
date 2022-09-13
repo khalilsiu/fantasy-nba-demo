@@ -205,7 +205,9 @@ export class AggregateStatsUseCase {
           lastSeasonTot,
         });
         if (statsOrError.isFailure) {
-          throw new DomainModelCreationError(statsOrError.error.toString());
+          return left(
+            new DomainModelCreationError(statsOrError.error.toString()),
+          );
         }
         playerStats.push(statsOrError.getValue());
         if (playerStats.length === 20 || i === playerIds.length - 1) {
@@ -218,7 +220,6 @@ export class AggregateStatsUseCase {
 
       return right(Result.ok<any>());
     } catch (err) {
-      console.log(err);
       return left(new UnexpectedError(err));
     }
   }

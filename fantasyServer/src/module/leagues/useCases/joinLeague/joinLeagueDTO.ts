@@ -1,4 +1,4 @@
-import { IsString } from 'class-validator';
+import { IsString, IsOptional } from 'class-validator';
 
 export default class JoinLeagueDTO {
   @IsString()
@@ -6,4 +6,8 @@ export default class JoinLeagueDTO {
 
   @IsString()
   walletAddress: string;
+
+  @IsString()
+  @IsOptional()
+  name?: string;
 }

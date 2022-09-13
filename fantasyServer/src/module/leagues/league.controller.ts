@@ -42,7 +42,7 @@ export class LeagueController {
     return result.value.getValue();
   }
 
-  @Get()
+  @Get('/join')
   async joinLeague(@Query() query: JoinLeagueDTO) {
     this.logger.log(`[POST] joinLeague`);
     const result = await this.joinLeagueUseCase.exec(query);
@@ -52,6 +52,11 @@ export class LeagueController {
       const error = result.value;
       this.logger.error(`joinLeague error ${JSON.stringify(error)}`);
       switch (error.constructor.name) {
+        case 'NotFoundError':
+          throw new HttpException(
+            error.errorValue().message,
+            HttpStatus.NOT_FOUND,
+          );
         default:
           throw new HttpException(
             error.errorValue().message,

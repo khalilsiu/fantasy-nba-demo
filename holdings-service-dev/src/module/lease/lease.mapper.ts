@@ -17,7 +17,7 @@ export class LeaseMapper {
 
     if (leaseOrError.isFailure) {
       throw new Error(
-        `LeaseMapper map to domain failed. ${leaseOrError.errorValue()}`,
+        `LeaseMapper map to domain failed. ${leaseOrError.error()}`,
       );
     }
     return leaseOrError.getValue();

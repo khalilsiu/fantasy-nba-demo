@@ -31,7 +31,9 @@ export class UpsertLeaguesUseCase {
           draftDateTime: new Date(draftDateTime),
         });
         if (leagueOrError.isFailure) {
-          throw new Error(leagueOrError.errorValue().toString());
+          return left(
+            new DomainModelCreationError(leagueOrError.error.toString()),
+          );
         }
         leagueDomainObjects.push(leagueOrError.getValue());
       }

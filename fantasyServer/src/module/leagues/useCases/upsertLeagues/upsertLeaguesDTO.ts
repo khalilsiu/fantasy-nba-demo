@@ -30,7 +30,7 @@ export class UpsertLeagueDTO {
   maxTeams?: number;
 
   @IsString()
-  commissionerWalletId: string;
+  commissionerWalletAddress: string;
 
   @IsNumber()
   commissionerFee: number;

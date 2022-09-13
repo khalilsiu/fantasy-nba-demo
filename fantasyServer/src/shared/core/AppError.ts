@@ -10,7 +10,7 @@ export default class UnexpectedError extends Result<UseCaseError> {
       message,
       error: err,
     } as UseCaseError);
-    // Logger.error(message, err);
+    console.error(`[UnexpectedError]: ${message}`);
   }
 
   public static create(err: Error): UnexpectedError {
@@ -21,20 +21,20 @@ export default class UnexpectedError extends Result<UseCaseError> {
 export class DomainModelCreationError extends Result<UseCaseError> {
   public constructor(message: string) {
     super(false, { message } as UseCaseError);
-    // Logger.error(message);
+    console.error(`[DomainModelCreationError]: ${message}`);
   }
 }
 
 export class NotFoundError extends Result<UseCaseError> {
   public constructor(message: string) {
     super(false, { message } as UseCaseError);
-    // Logger.error(message);
+    console.error(`[NotFoundError]: ${message}`);
   }
 }
 
 export class ValueObjectCreationError extends Result<UseCaseError> {
   public constructor(message: string) {
     super(false, { message } as UseCaseError);
-    //     Logger.error(message);
+    console.error(`[ValueObjectCreationError]: ${message}`);
   }
 }
