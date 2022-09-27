@@ -9,6 +9,7 @@ import {
   validate,
   ValidateNested,
   IsOptional,
+  IsBoolean,
 } from 'class-validator';
 import { Result } from 'src/shared/core/Result';
 import { Type } from 'class-transformer';
@@ -20,10 +21,12 @@ export interface LeagueProps {
   name?: string;
   teamIds?: number[];
   draftDateTime?: Date;
+  drafted?: boolean;
   maxTeams?: number;
   commissionerWalletAddress: string;
   commissionerFee: number;
   entryFee: number;
+  isPrivate: boolean;
   createdAt?: Date;
   deletedAt?: Date;
 }
@@ -44,6 +47,9 @@ export class League {
   @IsDate()
   readonly draftDateTime: Date;
 
+  @IsBoolean()
+  readonly drafted: boolean;
+
   @IsNumber()
   @Max(12)
   @Min(5)
@@ -60,6 +66,9 @@ export class League {
   @Min(0)
   readonly entryFee: number;
 
+  @IsBoolean()
+  readonly isPrivate: boolean;
+
   @IsDate()
   readonly createdAt: Date;
 
@@ -73,10 +82,12 @@ export class League {
     name = 'Your Dream League',
     teamIds = [],
     draftDateTime,
+    drafted = false,
     maxTeams = 5,
     commissionerWalletAddress,
     commissionerFee,
     entryFee,
+    isPrivate,
     createdAt,
     deletedAt,
   }: LeagueProps) {
@@ -84,10 +95,12 @@ export class League {
     this.name = name;
     this.teamIds = teamIds;
     this.draftDateTime = draftDateTime;
+    this.drafted = drafted;
     this.maxTeams = maxTeams;
     this.commissionerWalletAddress = commissionerWalletAddress;
     this.commissionerFee = commissionerFee;
     this.entryFee = entryFee;
+    this.isPrivate = isPrivate;
     this.createdAt = createdAt;
     this.deletedAt = deletedAt;
   }

@@ -56,6 +56,12 @@ export function IsBiggerThanOrEqualTo(
   };
 }
 
+export function boolStringToBool({ value }: { value: string }) {
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  return value;
+}
+
 export function IsSmallerThan(
   property: string,
   validationOptions?: ValidationOptions,

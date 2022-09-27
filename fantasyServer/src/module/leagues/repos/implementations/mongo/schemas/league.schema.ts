@@ -30,6 +30,12 @@ export class League {
   draftDateTime: Date;
 
   @Prop({
+    type: Boolean,
+    required: true,
+  })
+  drafted: boolean;
+
+  @Prop({
     type: Number,
     required: true,
   })
@@ -54,6 +60,12 @@ export class League {
   entryFee: number;
 
   @Prop({
+    type: Boolean,
+    required: true,
+  })
+  isPrivate: boolean;
+
+  @Prop({
     type: Date,
     required: true,
   })
@@ -66,4 +78,12 @@ export class League {
 }
 
 export const LeagueSchema = SchemaFactory.createForClass(League);
-LeagueSchema.index({ commissionerWalletAddress: 1 });
+// indexes are either sorted by createdAt in desc (from new to old)
+// or sorted by draftDateTime in asc (from closest to latest)
+LeagueSchema.index({
+  commissionerWalletAddress: 1,
+  drafted: 1,
+  createdAt: -1,
+  draftDateTime: 1,
+  deletedAt: -1,
+});

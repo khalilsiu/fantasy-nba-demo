@@ -8,6 +8,7 @@ import {
   Min,
   IsArray,
   ValidateNested,
+  IsBoolean,
 } from 'class-validator';
 
 export class UpsertLeagueDTO {
@@ -34,6 +35,10 @@ export class UpsertLeagueDTO {
 
   @IsNumber()
   commissionerFee: number;
+
+  @IsBoolean()
+  @Type(() => Boolean)
+  isPrivate: boolean;
 
   @IsNumber()
   entryFee: number;

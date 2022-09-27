@@ -12,6 +12,11 @@ import { UpsertLeaguesUseCase } from './useCases/upsertLeagues/upsertLeaguesUseC
 import UpsertLeagueDTO from './useCases/upsertLeagues/upsertLeaguesDTO';
 import { JoinLeagueUseCase } from './useCases/joinLeague/joinLeagueUseCase';
 import JoinLeagueDTO from './useCases/joinLeague/joinLeagueDTO';
+import GetLeaguesDTO from './useCases/getLeagues/getLeaguesDTO';
+import {
+  GetLeaguesResponseDTO,
+  GetLeaguesUseCase,
+} from './useCases/getLeagues/getLeaguesUseCase';
 
 @Controller('/league')
 export class LeagueController {
@@ -19,6 +24,7 @@ export class LeagueController {
   constructor(
     private upsertLeaguesUseCase: UpsertLeaguesUseCase,
     private joinLeagueUseCase: JoinLeagueUseCase,
+    private getLeaguesUseCase: GetLeaguesUseCase,
   ) {}
 
   @Post()
@@ -30,6 +36,29 @@ export class LeagueController {
     if (result.isLeft()) {
       const error = result.value;
       this.logger.error(`upsertLeague error ${JSON.stringify(error)}`);
+      switch (error.constructor.name) {
+        default:
+          throw new HttpException(
+            error.errorValue().message,
+            HttpStatus.INTERNAL_SERVER_ERROR,
+          );
+      }
+    }
+    // exception is being thrown if not found
+    return result.value.getValue();
+  }
+
+  @Get('/')
+  async getLeagues(
+    @Query() query: GetLeaguesDTO,
+  ): Promise<GetLeaguesResponseDTO> {
+    this.logger.log(`[POST] getLeagues`);
+    const result = await this.getLeaguesUseCase.exec(query);
+    this.logger.log(`getLeagues done`);
+
+    if (result.isLeft()) {
+      const error = result.value;
+      this.logger.error(`getLeagues error ${JSON.stringify(error)}`);
       switch (error.constructor.name) {
         default:
           throw new HttpException(

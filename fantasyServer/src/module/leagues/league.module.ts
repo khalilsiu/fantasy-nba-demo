@@ -9,6 +9,7 @@ import { TeamSchema } from './repos/implementations/mongo/schemas/team.schema';
 import { MongoTeamRepo } from './repos/implementations/mongo/team.mongorepo';
 import { LEAGUE_REPO } from './repos/league.repo';
 import { TEAM_REPO } from './repos/team.repo';
+import { GetLeaguesUseCase } from './useCases/getLeagues/getLeaguesUseCase';
 import { JoinLeagueUseCase } from './useCases/joinLeague/joinLeagueUseCase';
 import { UpsertLeaguesUseCase } from './useCases/upsertLeagues/upsertLeaguesUseCase';
 
@@ -23,6 +24,7 @@ import { UpsertLeaguesUseCase } from './useCases/upsertLeagues/upsertLeaguesUseC
   providers: [
     UpsertLeaguesUseCase,
     JoinLeagueUseCase,
+    GetLeaguesUseCase,
     {
       provide: LEAGUE_REPO,
       useClass: MongoLeagueRepo,
